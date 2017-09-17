@@ -1,0 +1,136 @@
+<div class="row login-content">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 col-sm-6 col-xs-12 login equal-height" ng-show="yesIdValidation">
+            <h3 class="blue comfortaa-font">
+               Welcome To Your Account
+            </h3>
+            <h5 style="margin-top:30px;" class="blue comfortaa-font">Authenticated by : <span style="font-weight: bolder;">{{info.provider}}</span></h5>
+            <h5 class="blue comfortaa-font">Username : <span style="font-weight: bolder;">{{info.username}}</span></h5>
+            <h5 class="blue comfortaa-font">Email Address : <span  style="font-weight: bolder">{{info.email}}</span></h5>
+            <div style="margin-top:30px;"><button type="button" class="btn btn-primary" ng-click="logout()">Logout</button></div>
+        </div>
+        <div class="col-md-5 col-sm-6 col-xs-12 login equal-height" ng-show="!yesIdValidation" style="overflow-y:auto;">
+            <h4 class="blue comfortaa-font">{{socialMediaValidationError}}. Register now please. </h4>
+            <!-- <div style="margin-top:30px;"><button type="button" class="btn btn-primary" ng-click="logout()">Logout</button></div> -->
+            <div id="divRegister">
+                <form class="form-horizontal" ng-submit="regUser();" style="height:300px;">
+                    <div class="form-group">
+                        <label class="control-label col-xs-2 custom-label" for="username">YesId</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Please enter your yesId" 
+                                          ng-model="regData.username" disabled>
+                        </div>
+                    </div>        
+                    <div class="form-group">
+                      <label class="control-label col-xs-2 custom-label" for="email">Email</label>
+                      <div class="col-xs-10">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Please enter your email" 
+                                ng-model="regData.email" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2 custom-label" for="password">Password</label>
+                        <div class="col-xs-10">
+                          <input type="password" class="form-control" id="password" name="password" placeholder="Please enter your password" 
+                                  ng-model="regData.password" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2 custom-label" for="facebookId">FacebookId</label>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control" id="facebookId" name="facebookId" placeholder="Please enter your facebookId" 
+                                  ng-model="regData.facebookId">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2 custom-label" for="googleId">GoogleId</label>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control" id="googleId" name="googleId" placeholder="Please enter your googleId" 
+                                  ng-model="regData.googleId">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2 custom-label" for="twitterId">TwitterId</label>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control" id="twitterId" name="twitterId" placeholder="Please enter your twitterId" 
+                                  ng-model="regData.twitterId">
+                        </div>
+                    </div>
+                    <div class="form-group"> 
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-6 col-xs-12 registration equal-height">
+            <h3 class="white comfortaa-font">
+                Manage Your Yes Account
+                <span class="bm">
+                    Urus akaun Yes anda 
+                </span>
+            </h3>
+            <span class="white">
+                Manage your Yes account online at your convenience.
+                <span class="bm">
+                    Urus akaun Yes anda secara dalam talian bila-bila masa 
+                </span>
+            </span>
+            <p>&nbsp;</p>
+            <table>
+                <tr class="icons">
+                    <td>
+                        <img src="assets/images/ico_bill_pymt.png" alt="Bill Payment">
+                    </td>
+                    <td>
+                        <img src="assets/images/ico_auto_billing.png" alt="Auto Billing">
+                    </td>
+                    <td>
+                        <img src="assets/images/ico_view_statement.png" alt="View Statement">
+                    </td>
+                    <td>
+                        <img src="assets/images/ico_view_purchase.png" alt="View Purchase">
+                    </td>
+                    <td>
+                        <img src="assets/images/ico_update_details.png" alt="Update Personal Details">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bill Payment
+                        <span class="bm">
+                            Pembayaran Bil
+                        </span>
+                    </td>
+                    
+                    <td>
+                        Auto Billing
+                        <span class="bm">
+                            Pengebilan auto
+                        </span>
+                    </td>
+                    <td>
+                        View Statement
+                        <span class="bm">
+                            Semak Penyata
+                        </span>
+                    </td>
+                    <td>
+                        View Purchase
+                        <span class="bm">
+                            Semak Pembelian
+                        </span>
+                    </td>
+                    <td>
+                        Update Personal Details
+                        <span class="bm">
+                            Kemaskini Maklumat Peribadi
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="clearfix"></div>
+    </div>

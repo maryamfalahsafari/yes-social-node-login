@@ -1,0 +1,130 @@
+
+<form id="loginFormId" ng-submit="doLogin();">
+        <!-- Content -->
+        <div class="row login-content">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 col-sm-6 col-xs-12 login equal-height">
+                <h3 class="blue comfortaa-font">
+                    Log In to My Account
+                    <span class="bm">
+                        Daftar masuk ke My Account 
+                    </span>
+                </h3>
+                <form>
+                    <div class="input-group input-group-lg">
+                        <input type="text" name="userId" class="form-control" maxlength="40" 
+                        placeholder="User ID/ID Pengguna" value="" ng-model="loginData.username">
+                    </div>
+                    <div class="input-group input-group-lg">                        
+                        <input type="password" name="password" class="form-control" 
+                        placeholder="Password/Kata Laluan" onKeyPress="return submitenter(this,event)" value="" ng-model="loginData.password">
+                        <div>
+                            <span class="bm"></span>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        By logging in, you agree to all 
+                        <a href="https://www.yes.my/tnc" target="_blank">Terms &amp; Conditions</a> and  
+                        <a href="https://www.yes.my/tnc/general-tnc#pp" target="_blank">
+                            Privacy Policy</a>.
+                    </div>
+                    <div class="notice">
+                        <span class="bm">
+                            Dengan mendaftar masuk, anda bersetuju dengan semua  
+                        <a href="https://www.yes.my/tnc" target="_blank">Terma &amp; Syarat</a>dan 
+                        <a href="https://www.yes.my/tnc/general-tnc#pp" target="_blank">
+                                Polisi Privasi								
+                        </a>.
+                    </div>
+                    
+                    <div class="form-controls">
+                        <div >                            
+                            <button type="submit" class="btn btn-default"> 
+                                Log In
+                            </button>
+                            <button type="button" class="btn btn-primary" ng-click="socialLogin('facebook');"> 
+                                Facebook
+                            </button>
+                            <button type="button" class="btn btn-info" ng-click="socialLogin('twitter');"> 
+                                    Twitter
+                            </button>
+                            <button type="button" class="btn btn-danger" ng-click="socialLogin('google');"> 
+                                    Google+
+                            </button>
+                        </div>
+                        <br/>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12 registration equal-height">
+                <h3 class="white comfortaa-font">
+                    Manage Your Yes Account
+                    <span class="bm">
+                        Urus akaun Yes anda 
+                    </span>
+                </h3>
+                <span class="white">
+                    Manage your Yes account online at your convenience.
+                    <span class="bm">
+                        Urus akaun Yes anda secara dalam talian bila-bila masa 
+                    </span>
+                </span>
+                <p>&nbsp;</p>
+                <table>
+                    <tr class="icons">
+                        <td>
+                            <img src="assets/images/ico_bill_pymt.png" alt="Bill Payment">
+                        </td>
+                        <td>
+                            <img src="assets/images/ico_auto_billing.png" alt="Auto Billing">
+                        </td>
+                        <td>
+                            <img src="assets/images/ico_view_statement.png" alt="View Statement">
+                        </td>
+                        <td>
+                            <img src="assets/images/ico_view_purchase.png" alt="View Purchase">
+                        </td>
+                        <td>
+                            <img src="assets/images/ico_update_details.png" alt="Update Personal Details">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Bill Payment
+                            <span class="bm">
+                                Pembayaran Bil
+                            </span>
+                        </td>
+                        
+                        <td>
+                            Auto Billing
+                            <span class="bm">
+                                Pengebilan auto
+                            </span>
+                        </td>
+                        <td>
+                            View Statement
+                            <span class="bm">
+                                Semak Penyata
+                            </span>
+                        </td>
+                        <td>
+                            View Purchase
+                            <span class="bm">
+                                Semak Pembelian
+                            </span>
+                        </td>
+                        <td>
+                            Update Personal Details
+                            <span class="bm">
+                                Kemaskini Maklumat Peribadi
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="clearfix"></div>
+        </div>
+    </form>

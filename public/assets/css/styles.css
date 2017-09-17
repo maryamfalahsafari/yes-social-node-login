@@ -1,0 +1,4242 @@
+@font-face {
+  font-family: 'Vag';
+  src: url("../font/vag.eot");
+  src: local("Vag"), url("../font/vag.woff") format("woff"), url("../font/vag.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Vagb';
+  src: url("../font/vagb.eot");
+  src: local("Vagb"), url("../font/vagb.woff") format("woff"), url("../font/vagb.ttf") format("truetype"); }
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  font-family: "robotolight", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #ffffff; }
+
+.mobile-body {background-color: #f5f5f5 !important;}
+
+p {
+  margin: 0; }
+
+a, a:hover {
+  color: #0faef2; }
+
+strong {
+  font-weight: normal;
+  font-family: "robotoregular", Arial, Helvetica, sans-serif; }input, select {
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  -webkit-box-shadow: none !important; }
+  input.place-holder, select.place-holder {
+    color: #999999; }
+
+select,
+.select {
+  background: url("../images/icon-arrow-menu.png") no-repeat top 16px right 14px #fff !important; }
+
+.select {
+  min-height: 46px;
+  border: 1px solid #E1E4E6;
+  margin: 5px 20px 15px 10px;
+  padding: 12px;
+  color: #999999;
+  cursor: pointer;
+  width: 63%;
+  float: right; }
+  .select.dark-text-color {
+    color: #333333; }
+
+.form-control[readonly] {
+  background-color: transparent !important;
+  border: 0 !important; }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap; }
+  .row-eq-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column; }.maybank-note.red {
+  padding: 0 20px; }
+
+.monthly-add-ons .inner-die table .last td label,
+.monthly-add-ons .inner-die table .last td label[for="terms"],
+.radio-wrapper.terms label,
+.radio-wrapper.terms label[for="terms"] {
+  padding-left: 35px !important; }
+  .monthly-add-ons .inner-die table .last td label span,
+  .monthly-add-ons .inner-die table .last td label[for="terms"] span,
+  .radio-wrapper.terms label span,
+  .radio-wrapper.terms label[for="terms"] span {
+    margin-left: -30px; }
+    
+.booster-plan,
+.reload-plan,
+.reload-amount-plan {
+  display: none;
+  position: absolute;
+  top: 46px;
+  right: 20px;
+  background-color: #ffffff;
+  z-index: 1000;
+  border: 1px solid #E1E4E6;
+  width: 63%;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(221, 221, 221, 0.75);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(221, 221, 221, 0.75);
+  box-shadow: 0px 2px 2px 0px rgba(221, 221, 221, 0.75); }
+  .booster-plan ul,
+  .reload-plan ul,
+  .reload-amount-plan ul {
+    list-style-type: none; }
+    .booster-plan ul li,
+    .reload-plan ul li,
+    .reload-amount-plan ul li {
+      padding: 12px;
+      min-height: 46px;
+      border-bottom: 1px solid #E1E4E6;
+      font-weight: normal; }
+      .booster-plan ul li.last,
+      .reload-plan ul li.last,
+      .reload-amount-plan ul li.last {
+        border-bottom: none; }
+      .booster-plan ul li:hover,
+      .reload-plan ul li:hover,
+      .reload-amount-plan ul li:hover {
+        background-color: #F9FAFB; }
+
+input[type=checkbox], input[type=radio] {
+  display: none; }
+
+input[type="checkbox"], input[type=radio] {
+  display: none; }
+
+input[type="checkbox"] + label span,
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin: 0 10px 4px -30px;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #E1E4E6;
+  font-family: "robotolight", Arial, Helvetica, sans-serif !important;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  cursor: pointer; 
+  margin-left: -30px;} /*Changes Aug29*/
+
+/*Changes Aug29*/
+.radio-wrapper label,
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  padding-left: 30px !important;}
+.account-content .details .unbilled-usage table tr td .radio-wrapper label {
+  padding-right: 15px;}
+input[type="checkbox"]:checked + label span,
+input[type="radio"]:checked + label span {
+  background: url("../images/ico_tick_white.png") #0faef2 1px no-repeat;
+  border-color: #0faef2; }
+
+input[readonly], input:read-only, textarea[readonly], textarea:read-only {
+  background-color: transparent !important;
+  border: 0 !important; 
+  cursor: default;/*Changes Aug29*/
+  padding-left: 0 !important;}/*Changes Aug29*/
+
+/*Changes Aug29*/
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+  padding: 10px 12px;
+}/**/
+.th-inner {
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  display: inline-block; }
+
+.header {
+  z-index: 1050; }
+.header-bn {
+  height: 62px;
+  background-color: #0faef2;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1200; }
+.header-bn a {
+    color: white;
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    text-decoration: none; }
+.header-bn a img {
+      margin-bottom: 2px; }
+
+.small-text {
+  font-size: 12px; }
+  
+.glyphicon.glyphicon-eye-open {
+  position: absolute;
+  right: 32px;
+  top: 21px;
+  z-index: 10;
+  display: none; }
+.modal {
+  top: 25%; }
+  .modal .modal-dialog {
+    width: 400px; }
+  .modal .modal-header {
+    margin-bottom: 20px;
+    font-family: "vagb", Arial, Helvetica, sans-serif;
+    color: #0faef2;
+    font-size: 22px;
+    padding: 0;
+    border-bottom: 0;
+    text-align: center; }
+  .modal .modal-body {
+    font-size: 15px;
+    padding: 0; }
+    .modal .modal-body p {
+      text-align: center;
+      margin-bottom: 20px; }
+
+.form control {
+  border: 1px solid #E1E4E6; }
+
+.modal-content {
+  padding: 40px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.modal-backdrop.in {
+  opacity: 0.7; }
+
+label:not(.terms) {
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
+  font-weight: normal; }
+
+.approval {
+  cursor: pointer;
+  margin-left: 10px; }
+
+.info {
+  cursor: pointer;
+  margin-left: 5px; }
+
+.progress {
+  background-color: #4D5C61;
+  height: 30px;
+  margin: 55px 12px 5px 12px; }
+  .progress .progress-bar {
+    background-color: #0faef2;
+    padding-top: 5px; }
+    .progress .progress-bar.red {
+      background-color: #ec1067; }
+    .progress .progress-bar.yellow {
+      background-color: #F15A22; }
+
+.reduced-label {
+  font-size: 0.8em;
+  color: #ec1067;
+  position: absolute;
+  left: 0;
+  width: 100%; }
+
+.content {
+  background-color: #f5f5f5;
+  border-left: 1px solid #E1E4E6;
+  height: 100%;
+  min-height: 374px;
+  padding: 30px 30px 50px 30px; }
+  .content.account-overview, .content.details {
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .content.international-roaming, .content.personal-details {
+    padding-top: 30px; }
+
+.blue, .blue-and-bold, .account-content .has-account .plan {
+  color: #0faef2; }
+
+.green {
+  color: #60bb46; }
+
+.blue-and-bold, .account-content .has-account .plan {
+  font-weight: bold; }
+
+.grey {
+  color: #E1E4E6; }
+
+.bold {
+  font-weight: bold; }
+
+.red {
+  color: #ec1067; }
+
+.scarlet {
+  color: #F15A22; }
+
+.white {
+  color: #ffffff; }
+
+.comfortaa-font {
+  font-family: "vagb", Arial, Helvetica, sans-serif; }
+
+.blue-button, .primary-button, .secondary-button, .grey-button, .light-grey-button {
+  background: #0faef2;
+  border: none;
+  font-family: Vagb;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 10px 20px; }
+
+.primary-button {
+  background-color: #ffc600; }
+
+.verify-button {
+  background: #ffc600;
+  border: none;
+  font-family: "vagb", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 10px 25px;
+  letter-spacing: 0.5px; }
+
+.validate-yes-id-password {
+  position: absolute;
+  top: 14px;
+  right: 30px;
+  z-index: 10; }
+
+.grey-button {
+  background-color: #4D5C62; }
+
+.light-grey-button {
+  background-color: #C8CDD1; }
+
+.small-button {
+  background: #0772a0;
+  padding: 4px 13px;
+  border: 0;
+  color: #fff;
+  font-size: 11px;
+  font-family: "vagb", Arial, Helvetica, sans-serif;
+  min-width: 98px; }/*Changes Aug29*/
+  .small-button.blue, .small-button.blue-and-bold, .account-content .has-account .small-button.plan {
+    background: #0faef2; }
+  .small-button span {
+    white-space: nowrap; }
+
+.error-msg {
+  font-size: 13px;
+  color: #ec1067;
+  display: block; }
+
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  *zoom: 1;
+  background-color: #f5f5f5; }
+  .bx-wrapper img {
+    max-width: 100%;
+    display: block; }
+  .bx-wrapper .bx-pager {
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+    border-left: 1px solid #E1E4E6; }
+    .bx-wrapper .bx-pager.bx-default-pager a {
+      background: #666;
+      text-indent: -9999px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      outline: 0;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+      .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+        background: #000; }
+    .bx-wrapper .bx-pager .bx-pager-item {
+      display: inline-block;
+      *zoom: 1;
+      *display: inline; }
+  .bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url(../images/bx_loader.gif) center center no-repeat #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000; }
+  .bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(../images/controls.png) no-repeat 0 -32px; }
+    .bx-wrapper .bx-prev:hover {
+      background-position: 0 0; }
+  .bx-wrapper .bx-next {
+    right: 10px;
+    background: url(../images/controls.png) no-repeat -43px -32px; }
+    .bx-wrapper .bx-next:hover {
+      background-position: -43px 0; }
+  .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999; }
+    .bx-wrapper .bx-controls-direction a.disabled {
+      display: none; }
+
+	  
+@keyframes clockwise {
+  to {
+    transform: rotate(360deg) translatez(0); } }
+.preloader-spin {
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  box-shadow: 12px -12px rgba(15, 174, 242, 0.1), 17px 0 rgba(15, 174, 242, 0.25), 12px 12px rgba(15, 174, 242, 0.375), 0 17px rgba(15, 174, 242, 0.5), -12px 12px rgba(15, 174, 242, 0.625), -17px 0 rgba(15, 174, 242, 0.75), -12px -12px rgba(15, 174, 242, 0.875), 0 -17px #0faef2;
+  animation: clockwise 0.8s steps(8, end) infinite;
+  margin: 25px auto 30px auto; }
+
+.preloader-msg {
+  text-align: center;
+  padding-bottom: 15px; }
+
+.valign-middle {
+  display: table-cell;
+  vertical-align: middle; }
+
+.banner {
+  padding: 0;
+  margin-top: -1px; }
+  /*Changes Oct31*/
+  /*
+  .banner img {
+    width: 100%;
+    height: auto; }*/
+
+  /**** Changes Oct31 ****/
+
+  .overview-page {
+    background-color: #f5f5f5;
+    border-left: 1px solid #E1E4E6;
+  }
+  .overview-page img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+  .overview-page .content {
+    padding: 15px;
+    border-left: 0 !important;
+    min-height: auto !important;
+  }
+  .overview-page .content p {
+    padding: 0 10px;
+  }
+  .overviewBanner {
+    overflow: hidden;
+  }
+  /*ADDED Nov2-2 */
+  .overviewBanner img {
+      width: 100%;
+      height: auto;
+    }
+  /* COMMENTED Nov2-2
+  @media (min-width: 1050px) {
+    .overviewBanner img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-width: 1049px) {
+    .overviewBanner img {
+      width: auto;
+      height: 100%;
+      max-width: none !important;
+      margin-left: -5%;
+      max-height: 330px;
+    }
+  }*/
+  .overviewContent {
+    padding: 0 20px 50px;
+  }
+  @media (max-width: 767px) {
+    .overviewContent {
+      padding: 0 5px 35px;
+    }/* COMMENTED Nov2-2
+    .overviewBanner {
+      height: 275px;
+    }
+    .overviewBanner img {
+      margin-left: 0;
+    }*/
+  }
+  /* COMMENTED Nov2-2  @media (max-width: 400px) {
+    .overviewBanner {
+      height: 200px;
+    }*/
+  }
+overviewSummary {
+  }
+  .overviewSummary strong {
+    font-family: 'robotomedium', Arial, Helvetica, sans-serif;
+  }
+  .summaryTotal {
+    background-color: #EE005D;
+    color: #fff;
+    padding: 10px 15px;
+  }
+  .summaryBreakdown {
+    background-color: #0171A3;
+    color: #fff;
+    font-size: 14px;
+  }
+  .summaryBreakdown em {
+    display: block;
+    font-size: 11px;
+  }
+  .summaryBreakdown .table td {
+    border: 0 !important;
+    text-align: center;
+  }
+  .summaryBreakdown .table {
+    margin-bottom: 0;
+  }
+  .title-img h4 {
+    color: #0171A3;
+  }  
+.title-img {
+    text-align: center;
+    padding: 35px 20px 20px 20px;
+  }
+  .img-caption {
+    margin-top: 18px;
+  }
+  @media (min-width: 992px) {
+    .img-caption {
+      min-height: 65px;
+    }
+    .overviewPrepaid .img-caption {
+      min-height: 40px;
+    }
+  }
+  .img-caption .small-text {
+    line-height: 1.3em;
+    padding-top: 15px !important;
+  }
+  .content-offset {
+    padding-top: 35px !important;
+  }
+  .content-offset img {
+    margin-top: -50px;
+  }
+  .content-offset-feat {
+    margin-top: -100px;
+  }
+  .content-offset-feat .lte-sect {
+    padding-top: 80px !important;
+  }
+  .content-feat {
+    z-index: 3;
+    background-color: transparent;
+  }
+  .content-feat img {
+    margin: 0 10px;
+  }
+  .content-feat .together {
+    display: inline-block;
+  }
+  @media (max-width: 859px) {
+    .content-feat .together {
+      display: inline;
+    }
+  }
+  .school-pattern {
+    background: url("../images/1BN/img_SchoolPattern.jpg");
+  }
+  .school-pattern .primary-button {
+    min-width: 230px;
+  }
+  .primary-button.larger {
+    font-size: 20px;
+  }
+
+@media (max-width: 991px) {
+  .total-eight {
+    padding: 0 20px;
+    max-width: 400px !important;
+  }
+  .overview-page .table-cell {
+    display: block;
+  }
+  .break-down {
+    max-width: 100% !important;
+    margin-bottom: 14px;
+  }
+}
+  .total-eight {
+    display: table;
+    max-width: 817px;
+    margin: 0 auto;
+  }
+  .eight-gb {
+    background-color: #5304A4;
+  }
+  .break-down {
+    border: 2px solid #5304A4;
+    max-width: 350px;
+  }
+  .free-unlimited {
+    background-color: #0171A3;
+  }
+  .overflow-auto {
+    overflow: auto;
+  }
+  .table-cell {
+    display: table-cell;
+    padding: 15px;
+  }
+  .comparison-table {
+    margin-top: 21px;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    border: 1px solid #fff;
+    vertical-align: middle !important;
+    text-align: center;
+    font-size: 14px;
+  }
+  .comparison-table .heading {
+    background-color: #4a4a4a;
+  }
+  .comparison-table .telco-yes th {
+    background-color: #00ACF5;
+  }
+  .comparison-table .telco-yes td {
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #CCEEFD;
+  }
+  .comparison-table .telco-m th {
+    background-color: #7ED321;
+  }
+  .comparison-table .telco-m td {
+    background-color: #E6F3E3;
+  }
+  .comparison-table .telco-c th {
+    background-color: #0490A4;
+  }
+  .comparison-table .telco-c td {
+    background-color: #E5F2F7;
+  }
+  .comparison-table .telco-u th {
+    background-color: #FF7900;
+  }
+  .comparison-table .telco-u td {
+    background-color: #FFF3F3;
+  }
+  .comparison-table .telco-d th {
+    background-color: #F8E71C;
+  }
+  .comparison-table .telco-d td {
+    background-color: #FCFDE5;
+  }
+  .comparison-table .highlight {
+    background-color: #;
+  }
+  .thick-divider {
+    border-bottom: 4px solid #d8d8d8;
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 7px;
+  }
+  @media (min-width: 992px) {
+    .devices-buy-now {
+      display: inline-flex;
+    }
+  }
+  .devices-img {
+    padding: 0;
+    overflow: hidden;
+  }
+  .billapp-thumb img,
+  .devices-img img {
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width: 992px) {
+    .devices-img img {
+      min-width: 460px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1096px) {
+    .devices-img img {
+      margin-left: -24%;
+    }
+  }
+  @media (min-width: 1097px) and (max-width: 1225px) {
+    .devices-img img {
+      margin-left: -10%;
+    }
+  }
+  .devices-caption {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 12px;
+  }
+  .devices-caption .primary-button {
+    margin-top: 10px;
+  }
+  .faq-title .die-title {
+    background-color: transparent;
+    float: left;
+    width: auto;
+    padding: 25px 5px 25px 15px;
+  }
+  .faq-title .back-to-cat {
+    float: right;
+    padding: 25px 15px 25px 5px;
+  }
+  @media (max-width: 767px) {
+    .faq-title .die-title,
+    .faq-title .back-to-cat {
+      padding: 25px 0;
+    }
+    .billPayment {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 450px) {
+    .hidden-xxs {
+      display: none;
+    }
+  }
+  .faq-cat {
+    background-color: #ffffff;
+    padding: 40px 20px 30px 20px;
+    color: #6d6d6d;
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+  }
+  .faq-thumb {
+    height: 80px;
+    margin-bottom: 25px;
+  }
+  .faq-thumb img {
+    width: auto;
+    max-width: 100%;
+  }
+  @media (max-width: 500px) {
+    .faq-thumb img {
+      height: 40px;
+    }
+    .faq-thumb {
+      height: 45px;
+    }
+  }
+  .faq-cat p {
+    height: 40px;
+  }
+  .faq-cat:hover {
+    text-decoration: none;
+  }
+  .faq-question-cat a {
+    margin: 10px 25px;
+    padding: 15px 20px;
+    font-family: 'robotomedium', Arial, Helvetica, sans-serif;
+    color: #17b1f2;
+    display: block;
+    text-decoration: none;
+    background: url("https://www.yes.my/images/arrows/arr-toggle-up.png") right 25px center no-repeat #fcfcfc;
+  }
+  .faq-question-cat a.collapsed {
+    background: url("https://www.yes.my/images/arrows/arr-toggle-down.png") right 25px center no-repeat #f5f5f5;
+    color: #666;
+  }
+  faq-question-cat a:hover {
+    color: #17b1f2;
+  }
+  .faq-subgroup .faq-question-cat a {
+    background: url(https://www.yes.my/images/icons/icon-toggle-active.png) left center no-repeat #fcfcfc;
+    padding: 10px 10px 10px 30px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 15px;
+    margin: 0;
+  }
+  .faq-subgroup .faq-question-cat a.collapsed {
+    background: url(https://www.yes.my/images/icons/icon-toggle-inactive.png) left center no-repeat #fcfcfc;
+  }
+  .faq-subgroup .faq-content {
+    margin: 0;
+  }  .faq-content {
+    background-color: #fcfcfc;
+    margin: -10px 25px 15px 25px;
+    padding: 15px 20px;
+    font-size: 13px;
+    line-height: 1.3em;
+    font-family: 'robotomedium', Arial, Helvetica, sans-serif;
+  }
+  .faq-content ol {
+    padding: 0;
+    margin: 0 0 0 15px;
+  }
+  .faq-content li {
+        padding-left: 2em;
+    margin-bottom: 1em;
+  }
+  .faq-content .desc {
+    font-family: "robotolight", Arial, Helvetica, sans-serif;
+    display: block;
+    padding-bottom: 10px;
+  }
+  .faq-group .panel {
+    margin-bottom: 0;
+    border: 0;
+    box-shadow: none;
+  }
+  .faq-group {
+    padding-bottom: 20px;
+    background-color: #fff;
+  }
+
+  .billPayment,
+  .myYes4GApp {
+    background-color: #fff;
+    height: 100%;
+    width: 100%; /*ADDED Nov1*/
+  }
+  .billapp-group {
+    text-align: center;
+    padding: 10px 15px 25px 15px;
+  }
+  .billapp-group .long-title {
+    color: #0faef2;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .billapp-group .primary-button {
+    margin-bottom: 5px;
+  }
+  @media (max-width: 942px) {
+    .billapp-group .primary-button {
+      max-width: 235px;
+      width: 100%;
+    }
+  }
+  .bp-logos {
+    padding: 10px 0;
+  }
+  .bp-logos .digicert {
+    max-height: 40px;
+  }
+  .bp-logos img {
+    width: auto;
+    max-height: 20px;
+  }
+  .mastercard,
+  .visa,
+  .digicert {
+    margin-bottom: 10px;
+  }
+  @media (min-width: 768px) {
+    .overview-page .equal-height {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display:         flex;
+      flex-wrap: wrap;
+    }
+  }
+  .billapp-thumb {
+    overflow: hidden;
+   /* max-height: 300px; COMMENTED Nov2*/
+    height: auto;
+  }
+/*ADDED Nov2*/
+  @media (max-width: 767px) {
+    .billPayment .billapp-thumb {
+      max-height: 300px;
+    }
+  }
+  @media (max-width: 1260px) and (min-width: 1200px) {
+    .myYes4GApp .devices-img .billapp-thumb img {
+      margin-left: -6% !important;
+    }
+  }
+  @media (max-width: 1199px) {
+    .myYes4GApp .devices-img .billapp-thumb img {
+      margin-left: 0 !important;
+    }
+  }
+  @media (max-width: 1199px) {
+    .devices-buy-now.myYes4GApp {
+      display: block !important;
+    }
+  }
+  /**/  .reward-birthday,
+  .reward-gifts,
+  .reward-invites,
+  .reward-offers {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .reward-offers {
+    color: #ee005d;
+  }
+  .reward-birthday {
+    color: #f35906
+  }
+  .reward-gifts {
+    color: #64bb46;
+  }
+  .reward-invites {
+    color: #00ACF5;
+  }
+
+/*******/.auto-renewal-reload-wrapper {
+  display: none; }
+  .auto-renewal-reload-wrapper.show {
+    display: block; }
+
+.container-fluid {
+  height: 100%; }
+
+.die {
+  padding: 20px 5px;
+  background-color: #ffffff; }
+
+.terms-popup {
+  height: 46px; }
+
+.mastercard, .visa {
+  display: inline-block;
+  border: 1px solid #E1E4E6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-right: 15px;
+  padding: 10px; }
+  .mastercard img, .visa img {
+    height: 30px; }
+
+.die-title {
+  min-height: 45px;
+  height: auto;
+  background-color: #fff;
+  color: #0faef2;
+  padding: 25px;
+  width: 100%;
+  font-family: "vagb", Arial, Helvetica, sans-serif;
+  font-size: 18px; }
+  .die-title .main-title {
+    display: inline-block;
+    width: 50%; }
+  .die-title .subtitle {
+    width: 48%;
+    display: inline-block;
+    text-align: right;
+    font-weight: normal; }
+
+.input-group,
+.inner-die {
+  background: #fff; }
+
+.account-overview-die {
+  background-color: #ffffff;
+  margin-bottom: 15px; }
+  .account-overview-die.no-border {
+    border: none; }
+  .account-overview-die .past-bill-usage-table tr {
+    border-left: none !important;
+    border-right: none !important; }
+  .account-overview-die .buttons-wrapper .buttons {
+    padding-right: 5px;
+    padding-bottom: 20px; }
+
+.connect-table label {
+  font-family: "robotolight", Arial, Helvetica, sans-serif; }
+
+.die-with-tabs ul.tabs {
+  width: 100%;
+  display: table;
+  background-color: #fff;
+  padding-bottom: 10px; }
+  .die-with-tabs ul.tabs li {
+    font-family: "vag", Arial, Helvetica, sans-serif;
+    color: #0faef2;
+    display: table-cell;
+    vertical-align: middle;
+    width: 33.33%;
+    min-height: 46px;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: #ffffff;
+    font-size: 15px; }
+    .die-with-tabs ul.tabs li.active {
+      background-color: #0faef2;
+      color: #ffffff; }
+
+.login-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  top: 120px;
+  margin-bottom: 120px;
+  background-color: #f5f5f5; }
+  .login-content .login,
+  .login-content .registration {
+    height: 337px; }
+  .login-content .login, .login-content .logout {
+    background-color: #ffffff;
+    padding: 20px 40px 40px; }
+    .login-content .login .input-group, .login-content .logout .input-group {
+      width: 100%; }
+    .login-content .login form, .login-content .logout form {
+      padding-top: 15px; }
+    .login-content .login input, .login-content .logout input {
+      border: 1px solid #E1E4E6;
+      font-size: 15px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0;
+      margin: 5px 0; }
+    .login-content .login .fpw-id.invalid input, .login-content .logout .fpw-id.invalid input {
+      border: 1px solid #ec1067; }
+    .login-content .login .rpw-id.invalid input, .login-content .logout .rpw-id.invalid input {
+      border: 1px solid #ec1067; }
+    .login-content .login .fpw-button .cancel, .login-content .logout .fpw-button .cancel {
+      margin-left: 5px; }
+    .login-content .login .fpw-error,
+    .login-content .login .rpw-error, .login-content .logout .fpw-error,
+    .login-content .logout .rpw-error {
+      padding-top: 3px; }
+    .login-content .login .fpw-sentmsg,
+    .login-content .login .rpw-sentmsg, .login-content .logout .fpw-sentmsg,
+    .login-content .logout .rpw-sentmsg {
+      display: none; }
+    .login-content .login .login-button, .login-content .logout .login-button {
+      float: left; }
+    .login-content .login .login-remember, .login-content .logout .login-remember {
+      display: inline-block;
+      padding-left: 10px; }
+    .login-content .login .login-forgot, .login-content .logout .login-forgot {
+      float: right; }
+    .login-content .login .notice, .login-content .logout .notice {
+      font-size: 12px;
+      padding-top: 7px; }
+    .login-content .login .form-controls, .login-content .logout .form-controls {
+      padding-top: 30px; }
+      .login-content .login .form-controls a, .login-content .logout .form-controls a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block; }
+  .login-content .rpw-notes .notice a {
+    color: #C4E1F7; }
+  .login-content .registration {
+    background-color: #0faef2;
+    padding: 20px 40px 40px; }
+    .login-content .registration table {
+      color: #C4E1F7;
+      border: none;
+      text-align: center;
+      margin-top: 5px; }
+      .login-content .registration table .icons td {
+        padding: 7px 11px; }
+      .login-content .registration table td {
+        width: 20%;
+        font-size: 12px;
+        vertical-align: top; }
+        .login-content .registration table td img {
+          width: 100%;
+          border: 3px solid #A3D7F3;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%; }
+    .login-content .registration button {
+      border: 1px solid #ffffff; }
+
+.account-content {
+  border-top: 1px solid #E1E4E6;
+  min-height: 350px;
+  position: relative;
+  top: 120px;
+  margin-bottom: 120px; }
+  .account-content.mobile-ver {
+    top: 0 !important; }
+  .account-content .left-menu-wrapper {
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    min-height: 374px; }
+    .account-content .left-menu-wrapper .fixed-position {
+      background-color: #ffffff;
+      position: fixed;
+      width: inherit;
+      top: 120px; }
+    .account-content .left-menu-wrapper ul li {
+      border-bottom: 1px solid #E1E4E6; }
+  .account-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .account-content ul li {
+      cursor: pointer;
+      font-weight: bold; }
+      .account-content ul li a {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        color: #333333; }
+        .account-content ul li a:hover {
+          color: #0faef2; }
+      .account-content ul li.expandable ul {
+        display: block; }
+      .account-content ul li.active > a {
+        color: #0faef2;
+        border-left: 5px solid #0faef2; }
+      .account-content ul li.active ul {
+        display: block; }
+  .account-content .outer-ul li a {
+    padding: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "vag", Arial, Helvetica, sans-serif; }
+  .account-content .inner-ul {
+    display: none; }
+    .account-content .inner-ul li a {
+      padding: 10px 40px;
+      font-size: 16px; }
+    .account-content .inner-ul li:first-child {
+      border-top: 1px solid #E1E4E6; }
+    .account-content .inner-ul li:last-child {
+      border-bottom: none; }
+  .account-content .no-account .left {
+    padding-right: 5px; }
+  .account-content .no-account .right {
+    padding-left: 5px;
+    text-align: right; }
+  .account-content .no-account .die h4 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-family: "robotoregular", Arial, Helvetica, sans-serif;
+    color: #0772a0; }
+  .account-content .has-account .die {
+    padding: 0; }
+  .account-content .has-account p {
+    margin-bottom: 0; }
+  .account-content .has-account .button-wrapper {
+    text-align: right; }
+  .account-content .has-account .left {
+    padding-left: 0; }
+  .account-content .has-account .right {
+    padding-right: 0; }
+  .account-content .has-account .account-info {
+    padding: 13px 5px 20px 5px; }
+    .account-content .has-account .account-info .plan-wrapper {
+      padding-right: 5px; }
+    .account-content .has-account .account-info .button-wrapper {
+      padding-top: 17px;
+      padding-left: 5px; }
+  .account-content .has-account .tariff {
+    padding: 20px 5px;
+    border-top: 1px solid #E1E4E6;
+    margin-bottom: 15px; }
+    .account-content .has-account .tariff .first-column {
+      padding-right: 5px; }
+    .account-content .has-account .tariff .second-column {
+      padding-left: 5px;
+      padding-right: 5px; }
+    .account-content .has-account .tariff .button-wrapper {
+      padding-left: 5px; }
+  .account-content .has-account .plan {
+    font-size: 16px; }
+  .account-content .has-account .account-number {
+    font-size: 20px;
+    font-weight: bold; }
+  .account-content .has-account .rate, .account-content .has-account .date {
+    font-size: 16px;
+    font-weight: bold; }
+  .account-content .account-edit .left {
+    font-size: 18px;
+    padding-right: 5px; }
+    .account-content .account-edit .left span {
+      font-family: "robotoregular", Arial, Helvetica, sans-serif; }
+  .account-content .account-edit .right {
+    padding-left: 5px;
+    text-align: right;
+    padding-top: 3px;
+    white-space: nowrap; }
+    .account-content .account-edit .right .blue-button, .account-content .account-edit .right .primary-button, .account-content .account-edit .right .secondary-button, .account-content .account-edit .right .grey-button, .account-content .account-edit .right .light-grey-button {
+      margin-right: 10px; }
+  .account-content .account-edit .second-die {
+    margin-top: 30px;
+    padding: 10px 0 0 0;
+    display: none; }
+    .account-content .account-edit .second-die .enter-yes-id-wrapper {
+      border-bottom: 0;
+      padding: 0;
+      position: relative; }
+      .account-content .account-edit .second-die .enter-yes-id-wrapper .enter-yes-id {
+        padding: 18px 20px; }
+        .account-content .account-edit .second-die .enter-yes-id-wrapper .enter-yes-id span {
+          font-weight: bold; }
+      .account-content .account-edit .second-die .enter-yes-id-wrapper .status-wrapper {
+        padding: 15px 20px 15px 15px;
+        text-align: right;
+        position: absolute;
+        right: 38px;
+        top: 2px; }
+    .account-content .account-edit .second-die .confirm-yes-id-wrapper {
+      padding: 0; }
+      .account-content .account-edit .second-die .confirm-yes-id-wrapper div.confirm-yes-id {
+        padding: 18px 20px; }
+        .account-content .account-edit .second-die .confirm-yes-id-wrapper div.confirm-yes-id span {
+          font-weight: bold; }
+    .account-content .account-edit .second-die .input-wrapper {
+      height: 100%;
+      padding-right: 0;
+      padding-left: 0;
+      position: relative; }
+      .account-content .account-edit .second-die .input-wrapper img {
+        position: absolute;
+        right: 30px;
+        top: 18px;
+        width: 20px; }
+      .account-content .account-edit .second-die .input-wrapper input {
+        width: 92%;
+        margin: 5px 20px 5px 0;
+        padding: 12px;
+        float: right; }
+        .account-content .account-edit .second-die .input-wrapper input.taken-id {
+          border: 1px solid #ec1067; }
+  .account-content .account-edit .buttons-wrapper {
+    padding: 20px;
+    text-align: right;
+    display: none;
+    background-color: #fff; }
+    .account-content .account-edit .buttons-wrapper .submit {
+      margin-right: 10px; }
+  .account-content .account-overview .button-wrapper {
+    text-align: right; }
+    .account-content .account-overview .button-wrapper.update-autoreload, .account-content .account-overview .button-wrapper.update-autorenewal {
+      margin-top: 15px;
+      padding-right: 0;
+      display: none; }
+  .account-content .account-overview .amount-wrapper,
+  .account-content .account-overview .addon-wrapper {
+    min-height: 87px; }
+  .account-content .account-overview .bill-summary .amount-wrapper {
+    padding: 9px 10px 3px 10px; }
+    .account-content .account-overview .bill-summary .amount-wrapper p {
+      white-space: nowrap;
+      font-family: "robotolight", Arial, Helvetica, sans-serif; }
+    .account-content .account-overview .bill-summary .amount-wrapper .amount {
+      font-weight: bold;
+      font-size: 38px; }
+      .account-content .account-overview .bill-summary .amount-wrapper .amount span {
+        display: inline-block;
+        font-size: 14px;
+        vertical-align: 85%;
+        padding-right: 2px; }
+    .account-content .account-overview .bill-summary .amount-wrapper .button-wrapper {
+      padding-bottom: 5px;
+      padding-top: 13px;
+      padding-left: 0; }
+  .account-content .account-overview .bill-summary .bill-info table {
+    width: 94%;
+    margin: 0 auto; }
+    .account-content .account-overview .bill-summary .bill-info table td {
+      padding: 15px;
+      vertical-align: top;
+      background-color: #f5f5f5; }
+      .account-content .account-overview .bill-summary .bill-info table td span {
+        display: block;
+        font-weight: bold; }
+    .account-content .account-overview .bill-summary .bill-info table .bill-date,
+    .account-content .account-overview .bill-summary .bill-info table .due-date {
+      width: 30%; }
+    .account-content .account-overview .bill-summary .bill-info table .bill-date,
+    .account-content .account-overview .bill-summary .bill-info table .bill-period {
+      border-right: 5px solid #fff; }
+  .account-content .account-overview .bill-summary .auto-billing {
+    padding: 11px 15px;
+    margin: 5px auto;
+    position: relative;
+    width: 94%;
+    background-color: #f5f5f5; }
+    .account-content .account-overview .bill-summary .auto-billing label {
+      margin-bottom: 0; }
+    .account-content .account-overview .bill-summary .auto-billing p {
+      font-size: 12px;
+      padding-left: 31px; }
+    .account-content .account-overview .bill-summary .auto-billing a {
+      position: absolute;
+      top: 8px;
+      right: 13px;
+      cursor: pointer; }
+  .account-content .account-overview .bill-summary .bill-statement {
+    padding-bottom: 9px;
+    padding-left: 25px; }
+    .account-content .account-overview .bill-summary .bill-statement .description-wrapper {
+      padding-left: 0; }
+    .account-content .account-overview .bill-summary .bill-statement .description {
+      font-size: 12px; }
+    .account-content .account-overview .bill-summary .bill-statement .button-wrapper {
+      padding-left: 0;
+      padding-top: 6px; }
+  .account-content .account-overview .usage-summary p {
+    text-align: center; }
+    .account-content .account-overview .usage-summary p.die-title {
+      text-align: left; }
+  .account-content .account-overview .usage-summary .left {
+    color: #B8B8B8; }
+  .account-content .account-overview .usage-summary .right {
+    float: right;
+    color: #B8B8B8; }
+  .account-content .account-overview .usage-summary .percentage {
+    text-align: center;
+    position: absolute;
+    bottom: 75px;
+    left: 38%; }
+    .account-content .account-overview .usage-summary .percentage .amount {
+      padding: 3px 5px;
+      color: #ffffff;
+      background-color: #0faef2; }
+    .account-content .account-overview .usage-summary .percentage .img-wrapper {
+      display: block; }
+      .account-content .account-overview .usage-summary .percentage .img-wrapper img {
+        vertical-align: top; }
+  .account-content .account-overview .usage-summary .progress-bar-text {
+    position: absolute;
+    color: #ffffff;
+    font-size: 12px;
+    top: 0px;
+    left: 0;
+    text-align: center;
+    width: 100%; }
+  .account-content .account-overview .usage-summary .progress {
+    position: relative; }
+  .account-content .account-overview .usage-summary .data-balance {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .account-content .account-overview .usage-summary .speed-status {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .account-content .account-overview .usage-summary .speed-status .value {
+      padding-top: 40px; }
+  .account-content .account-overview .usage-summary .voice-balance {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .account-content .account-overview .usage-summary .sms-balance {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .account-content .account-overview .usage-summary .button-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .account-content .account-overview .usage-summary .value {
+    font-size: 24px;
+    font-weight: bold; }
+  .account-content .account-overview .usage-summary .addon-wrapper .button-wrapper {
+    padding-bottom: 5px;
+    padding-top: 21px;
+    padding-left: 0; }
+  .account-content .account-overview .usage-summary .addon-wrapper p {
+    text-align: left;
+    margin-top: 32px;
+    padding-left: 10px; }
+
+account-content .account-overview .yes-plans-no-account .inner-die {
+    text-align: center;
+    padding: 20px; }
+  .account-content .account-overview .yes-plans-no-account a {
+    text-decoration: none; }
+  .account-content .account-overview .yes-plans-no-account .faq {
+    text-align: right; }
+    .account-content .account-overview .yes-plans-no-account .faq a {
+      display: inline-block; }
+  .account-content .account-overview .yes-plans-with-account .line {
+    min-height: 46px;
+    border-bottom: 1px solid #E1E4E6; }
+    .account-content .account-overview .yes-plans-with-account .line.last {
+      border-bottom: none; }
+    .account-content .account-overview .yes-plans-with-account .line.first-row {
+      background-color: #F6F9FB;
+      color: #BCBCBC;
+      font-size: 12px;
+      min-height: 38px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .account-content .account-overview .yes-plans-with-account .line .plan-details {
+      padding: 0; }
+    .account-content .account-overview .yes-plans-with-account .line .plan-details-content {
+      padding-left: 0;
+      padding-right: 0; }
+      .account-content .account-overview .yes-plans-with-account .line .plan-details-content > div {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+    .account-content .account-overview .yes-plans-with-account .line .details-content {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .account-content .account-overview .yes-plans-with-account .line .plan, .account-content .account-overview .yes-plans-with-account .line .name, .account-content .account-overview .yes-plans-with-account .line .account {
+      word-break: break-all; }
+      .account-content .account-overview .yes-plans-with-account .line .plan span, .account-content .account-overview .yes-plans-with-account .line .name span, .account-content .account-overview .yes-plans-with-account .line .account span {
+        white-space: nowrap; }
+    .account-content .account-overview .yes-plans-with-account .line .plan-details > div, .account-content .account-overview .yes-plans-with-account .line .plan-details-content > div {
+      padding-left: 10px;
+      padding-right: 10px; }  .account-content .account-overview .account-plan-details .button-wrapper,
+  .account-content .account-overview .account-subscription-details .button-wrapper {
+    text-align: right;
+    vertical-align: top; }
+  .account-content .account-overview .account-plan-details table,
+  .account-content .account-overview .account-subscription-details table {
+    width: 94%;
+    margin: 0 auto; }
+    .account-content .account-overview .account-plan-details table tr,
+    .account-content .account-overview .account-subscription-details table tr {
+      width: 100%; }
+    .account-content .account-overview .account-plan-details table td,
+    .account-content .account-overview .account-subscription-details table td {
+      padding: 12px 0;
+      width: 65%;
+      vertical-align: top; }
+      .account-content .account-overview .account-plan-details table td > div,
+      .account-content .account-overview .account-subscription-details table td > div {
+        padding-left: 0;
+        padding-right: 0; }
+    .account-content .account-overview .account-plan-details table th,
+    .account-content .account-overview .account-subscription-details table th {
+      padding: 12px 15px;
+      vertical-align: top;
+      font-family: "robotoregular", Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      position: relative; }
+    .account-content .account-overview .account-plan-details table .yes-id,
+    .account-content .account-overview .account-subscription-details table .yes-id {
+      word-break: break-all; }
+      .account-content .account-overview .account-plan-details table .yes-id .small-button,
+      .account-content .account-overview .account-subscription-details table .yes-id .small-button {
+        float: right;
+        margin-top: 5px; }
+  .account-content .account-overview .account-plan-details.add-ons .expandable.down img, .account-content .account-overview .account-plan-details.add-ons .expandable.up img {
+    padding-right: 14px; }
+  .account-content .account-overview .account-plan-details.add-ons .expandable,
+  .account-content .account-overview .account-subscription-details.subscriptions .expandable {
+    background-color: #f5f5f5;
+    cursor: pointer; }
+    .account-content .account-overview .account-plan-details.add-ons .expandable.down,
+    .account-content .account-overview .account-subscription-details.subscriptions .expandable.down {
+      border-bottom: 10px solid #fff; }
+      .account-content .account-overview .account-plan-details.add-ons .expandable.down .down-image,
+      .account-content .account-overview .account-subscription-details.subscriptions .expandable.down .down-image {
+        display: inline-block; }
+      .account-content .account-overview .account-plan-details.add-ons .expandable.down .up-image,
+      .account-content .account-overview .account-subscription-details.subscriptions .expandable.down .up-image {
+        display: none; }
+    .account-content .account-overview .account-plan-details.add-ons .expandable.up .up-image,
+    .account-content .account-overview .account-subscription-details.subscriptions .expandable.up .up-image {
+      display: inline-block; }
+    .account-content .account-overview .account-plan-details.add-ons .expandable.up .down-image,
+    .account-content .account-overview .account-subscription-details.subscriptions .expandable.up .down-image {
+      display: none; }
+    .account-content .account-overview .account-plan-details.add-ons .expandable td,
+    .account-content .account-overview .account-subscription-details.subscriptions .expandable td {
+      text-align: right; }
+  .account-content .account-overview .account-plan-details.add-ons .add-ons-hidden-part,
+  .account-content .account-overview .account-plan-details.add-ons .auto-reload-hidden-part,
+  .account-content .account-overview .account-plan-details.add-ons .auto-renewal-hidden-part,
+  .account-content .account-overview .account-subscription-details.subscriptions .add-ons-hidden-part,
+  .account-content .account-overview .account-subscription-details.subscriptions .auto-reload-hidden-part,
+  .account-content .account-overview .account-subscription-details.subscriptions .auto-renewal-hidden-part {
+    display: none; }
+  .account-content .account-overview .account-plan-details.add-ons .add-ons-hidden-part,
+  .account-content .account-overview .account-plan-details.add-ons .valuepack-hidden-part,
+  .account-content .account-overview .account-plan-details.add-ons .auto-reload-hidden-part,
+  .account-content .account-overview .account-plan-details.add-ons .auto-renewal-hidden-part,
+  .account-content .account-overview .account-subscription-details.subscriptions .add-ons-hidden-part,
+  .account-content .account-overview .account-subscription-details.subscriptions .valuepack-hidden-part,
+  .account-content .account-overview .account-subscription-details.subscriptions .auto-reload-hidden-part,
+  .account-content .account-overview .account-subscription-details.subscriptions .auto-renewal-hidden-part {
+    background: #f5f5f5;
+    border-bottom: 10px solid #fff; }
+    .account-content .account-overview .account-plan-details.add-ons .add-ons-hidden-part table,
+    .account-content .account-overview .account-plan-details.add-ons .valuepack-hidden-part table,
+    .account-content .account-overview .account-plan-details.add-ons .auto-reload-hidden-part table,
+    .account-content .account-overview .account-plan-details.add-ons .auto-renewal-hidden-part table,
+    .account-content .account-overview .account-subscription-details.subscriptions .add-ons-hidden-part table,
+    .account-content .account-overview .account-subscription-details.subscriptions .valuepack-hidden-part table,
+    .account-content .account-overview .account-subscription-details.subscriptions .auto-reload-hidden-part table,
+    .account-content .account-overview .account-subscription-details.subscriptions .auto-renewal-hidden-part table {
+      width: 100%; }
+    .account-content .account-overview .account-plan-details.add-ons .add-ons-hidden-part > td,
+    .account-content .account-overview .account-plan-details.add-ons .valuepack-hidden-part > td,
+    .account-content .account-overview .account-plan-details.add-ons .auto-reload-hidden-part > td,
+    .account-content .account-overview .account-plan-details.add-ons .auto-renewal-hidden-part > td,
+    .account-content .account-overview .account-subscription-details.subscriptions .add-ons-hidden-part > td,
+    .account-content .account-overview .account-subscription-details.subscriptions .valuepack-hidden-part > td,
+    .account-content .account-overview .account-subscription-details.subscriptions .auto-reload-hidden-part > td,
+    .account-content .account-overview .account-subscription-details.subscriptions .auto-renewal-hidden-part > td {
+      padding: 0; }
+  .account-content .account-overview .account-subscription-details .button-wrapper {
+    padding: 10px 3% 20px 3%; }
+    .account-content .account-overview .account-subscription-details .button-wrapper .update,
+    .account-content .account-overview .account-subscription-details .button-wrapper .unsubscribed {
+      display: none; }
+    .account-content .account-overview .account-subscription-details .button-wrapper .unsubscribed {
+      float: left;
+      margin-top: 9px; }
+  .account-content .account-overview .account-subscription-details table th {
+    padding-right: 150px; }
+    .account-content .account-overview .account-subscription-details table th p {
+      font-weight: 100 !important;
+      font-size: 12px;
+      display: block; }
+    .account-content .account-overview .account-subscription-details table th span {
+      display: none;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #ffffff;
+      background-color: #62BC59;
+      position: absolute;
+      top: 8%;
+      right: 37px;
+      padding: 3px 6px 4px 6px; }
+    .account-content .account-overview .account-subscription-details table th img {
+      position: absolute;
+      top: 10%;
+      right: 14px; }
+  .account-content .account-overview .account-subscription-details .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 94%;
+    position: relative;
+    margin: 0 auto;
+    background-color: #f5f5f5; }
+    .account-content .account-overview .account-subscription-details  .input-group .control-label {
+      padding-left: 5px;
+      position: absolute;
+      top: 14px;
+      left: 0;
+      width: 51%;
+      font-size: 14px; }
+    .account-content .account-overview .account-subscription-details  .input-group img.select-arrows {
+      display: none; }
+    .account-content .account-overview .account-subscription-details  .input-group select {
+      background-color: #fff;
+      margin-left: 51%;
+      font-size: 1em;
+      width: 49%;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0;
+      padding-left: 10px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      margin-bottom: 10px; }
+    .account-content .account-overview .account-subscription-details .input-group.terms {
+      padding: 15px 15px 9px 15px; }
+      .account-content .account-overview .account-subscription-details  .input-group.terms label {
+        padding-left: 30px; }
+        .account-content .account-overview .account-subscription-details  .input-group.terms label span {
+          /*removed all*/ }/*Changes Aug29*/
+  .account-content .account-overview .account-subscription-details .highlighted input:active, .account-content .account-overview .account-subscription-details .highlighted input:focus, .account-content .account-overview .account-subscription-details .highlighted select:active, .account-content .account-overview .account-subscription-details .highlighted select:focus {
+    border: 1px solid #0faef2; }
+  .account-content .details .input-group {
+    width: 100%;
+    position: relative; }
+    .account-content .details .input-group #yesIdPassword {
+      padding-right: 150px; }
+    @media (min-width: 768px) {
+      .account-content .details .input-group.with-select label, .account-content .details .input-group.with-select-last label {
+        width: 30%; } }
+    .account-content .details .input-group input, .account-content .details .input-group select {
+      border: 1px solid #E1E4E6;
+      font-size: 1em;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0;
+      width: 63%;
+      float: right;
+      margin: 5px 20px 5px 10px; }
+      .account-content .details .input-group input#month, .account-content .details .input-group select#month {
+        margin-right: 0; }
+      .account-content .details .input-group input#year, .account-content .details .input-group select#year {
+        margin-left: 1.1%; }
+    .account-content .details .input-group .total-payment {
+      padding: 20px 20px 20px 35%; }
+    .account-content .details .input-group .total-payment .left {
+      float: left;
+      padding-bottom: 5px; }
+    .account-content .details .input-group .total-payment .right {
+      float: right;
+      position: relative;
+      font-size: 1.5em;
+      padding-bottom: 5px; }
+      .account-content .details .input-group .total-payment .right.normal-size {
+        font-size: 16px; }
+    .account-content .details .input-group .total-payment sup {
+      font-size: 0.6em; }
+    .account-content .details .input-group select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none; }
+    .account-content .details .input-group label {
+      padding-left: 5px;
+      position: absolute;
+      top: 12px;
+      left: 10px;
+      z-index: 10;
+      color: #333333;
+      width: 31%; }
+    .account-content .details .input-group .radio-wrapper {
+      background-color: white;
+      min-height: 46px;
+      padding-left: 34%;
+      padding-bottom: 20px; }
+      .account-content .details .input-group .radio-wrapper .inline {
+        display: inline-block; }
+      .account-content .details .input-group .radio-wrapper .description {
+        /*removed all*/ }/*Changes Aug29*/
+      .account-content .details .input-group .radio-wrapper label {
+        position: relative;
+        z-index: 10;
+        font-weight: normal;
+        color: #333333;
+        padding: 5px;
+        height: auto;
+        border-width: 0;
+        font-family: "robotolight", Arial, Helvetica, sans-serif;
+        width: auto; }
+    .account-content .details .input-group .select-arrows {
+      display: none; }
+    .account-content .details .input-group .info {
+      cursor: pointer; }
+    .account-content .details .input-group .info, .account-content .details .input-group .lock {
+      margin-left: 10px;
+      z-index: 14;
+      /*dual.lang*/
+      position: absolute;
+   	  top: 5px;
+     left: 176px; }
+    .account-content .details .input-group .lock {
+      width: 10px; }
+    .account-content .details .input-group .hint {
+      background-color: #E9F8FD;
+      border: 1px solid rgba(0, 166, 228, 0.38);
+      padding: 10px;
+      width: 200px;
+      color: #0faef2;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      z-index: 20;
+      display: none; }
+    .account-content .details .input-group .triangle {
+      position: absolute;
+      top: 39px;
+      left: 85px;
+      z-index: 22;
+      display: none; }
+    .account-content .details .input-group.required .control-label:before {
+      color: #ec1067;
+      content: "*";
+      position: absolute;
+      margin-left: -8px;
+      margin-top: -4px;
+      z-index: 10; }
+    .account-content .details .input-group.date-of-birth select, .account-content .details .input-group.expiry-date select {
+      display: inline-block; }
+  .account-content .details .buttons-wrapper {
+    text-align: right;
+    overflow: auto;
+    background-color: #fff; }
+    .account-content .details .buttons-wrapper .grey-button {
+      margin-left: 10px; }
+  .account-content .details.personal-details .blue-button, .account-content .details.personal-details .primary-button, .account-content .details.personal-details .secondary-button, .account-content .details.personal-details .grey-button, .account-content .details.personal-details .light-grey-button {
+    margin-left: 10px; }
+  .account-content .details table {
+    width: 100%; }
+    .account-content .details table tr td {
+      padding: 5px 25px 5px 15px; }/*Changes Aug29*/
+      .account-content .details table tr td.statement {
+        padding: 11px 15px; }
+        .account-content .details table tr td.statement a.link {
+          float: right; }
+  .account-content .details .die-table-wrapper table tr th {
+    background-color: #f5f5f5;
+    font-family: "robotoregular", Arial, Helvetica, sans-serif;
+    font-weight: normal; }
+  .account-content .details .die-table-wrapper table tr th, .account-content .details .die-table-wrapper table tr td {
+    height: 46px;
+    padding: 10px 16px; }
+  .account-content .details .unbilled-usage table .unbilled-amount th, .account-content .details .unbilled-usage table .unbilled-amount td,
+  .account-content .details .unbilled-usage table .next-billDate th,
+  .account-content .details .unbilled-usage table .next-billDate td {
+    padding: 10px 0 10px 25px; }/*Changes Aug29*/
+  .account-content .details .unbilled-usage table tr {
+    border: none; }
+    .account-content .details .unbilled-usage table tr.notice {
+      font-size: 12px; }
+      .account-content .details .unbilled-usage table tr.notice td {
+        padding: 0 15px 10px 15px; }
+    .account-content .details .unbilled-usage table tr th {
+      padding-left: 25px;/*Changes Aug29*/
+      padding-bottom: 24px; }
+    .account-content .details .unbilled-usage table tr td {
+      padding: 10px 15px 0 15px; }
+  .account-content .details .sms-usage,
+  .account-content .details .data-usage,
+  .account-content .details .voice-usage {
+    margin-top: -15px; }
+    .account-content .details .sms-usage .die-table-wrapper,
+    .account-content .details .data-usage .die-table-wrapper,
+    .account-content .details .voice-usage .die-table-wrapper {
+      border-top: 0; }
+      .account-content .details .sms-usage .die-table-wrapper .line,
+      .account-content .details .data-usage .die-table-wrapper .line,
+      .account-content .details .voice-usage .die-table-wrapper .line {
+        font-size: 13px;
+        padding: 10px;
+        background-color: white;
+        display: flex;
+        margin: 0 12px; }
+        .account-content .details .sms-usage .die-table-wrapper .line div,
+        .account-content .details .data-usage .die-table-wrapper .line div,
+        .account-content .details .voice-usage .die-table-wrapper .line div {
+          padding-left: 0;
+          padding-right: 0; }
+        .account-content .details .sms-usage .die-table-wrapper .line .payment,
+        .account-content .details .sms-usage .die-table-wrapper .line .serial-number,
+        .account-content .details .sms-usage .die-table-wrapper .line .order-id,
+        .account-content .details .data-usage .die-table-wrapper .line .payment,
+        .account-content .details .data-usage .die-table-wrapper .line .serial-number,
+        .account-content .details .data-usage .die-table-wrapper .line .order-id,
+        .account-content .details .voice-usage .die-table-wrapper .line .payment,
+        .account-content .details .voice-usage .die-table-wrapper .line .serial-number,
+        .account-content .details .voice-usage .die-table-wrapper .line .order-id {
+          overflow-wrap: break-word;
+          word-wrap: break-word; }
+      .account-content .details .sms-usage .die-table-wrapper .last-row,
+      .account-content .details .data-usage .die-table-wrapper .last-row,
+      .account-content .details .voice-usage .die-table-wrapper .last-row {
+        font-size: 12px;
+        min-height: 20px; }
+        .account-content .details .sms-usage .die-table-wrapper .last-row .right,
+        .account-content .details .data-usage .die-table-wrapper .last-row .right,
+        .account-content .details .voice-usage .die-table-wrapper .last-row .right {
+          text-align: right; }
+      .account-content .details .sms-usage .die-table-wrapper .first-row,
+      .account-content .details .data-usage .die-table-wrapper .first-row,
+      .account-content .details .voice-usage .die-table-wrapper .first-row {
+        background-color: #f5f5f5;
+        color: #999;
+        font-family: "robotoregular", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 12px; }
+        .account-content .details .sms-usage .die-table-wrapper .first-row th,
+        .account-content .details .data-usage .die-table-wrapper .first-row th,
+        .account-content .details .voice-usage .die-table-wrapper .first-row th {
+          font-weight: normal;
+          min-height: 30px;
+          height: auto; }
+    .account-content .details .sms-usage .no-results,
+    .account-content .details .data-usage .no-results,
+    .account-content .details .voice-usage .no-results {
+      color: #E1E4E6;
+      text-align: center; }
+  .account-content .details .voice-usage {
+    display: none; }
+    .account-content .details .voice-usage .die-title .subtitle {
+      font-size: 12px; }
+    .account-content .details .voice-usage .inner-die {
+      overflow-x: auto; }
+    .account-content .details .voice-usage table tr th, .account-content .details .voice-usage table tr td {
+      padding: 10px 5px; }
+      .account-content .details .voice-usage table tr th:first-child, .account-content .details .voice-usage table tr td:first-child {
+        padding-left: 15px; }
+      .account-content .details .voice-usage table tr th:last-child, .account-content .details .voice-usage table tr td:last-child {
+        padding-right: 15px; }
+    .account-content .details .voice-usage .buttons-wrapper .buttons {
+      padding-top: 20px; }
+  .account-content .details .plan-upgrade table tr th, .account-content .details .monthly-add-ons table tr th {
+    vertical-align: top; }
+  .account-content .details .plan-upgrade table tr th, .account-content .details .plan-upgrade table tr td, .account-content .details .monthly-add-ons table tr th, .account-content .details .monthly-add-ons table tr td {
+    padding: 10px 25px; }
+    .account-content .details .plan-upgrade table tr th.current-plan, .account-content .details .plan-upgrade table tr td.current-plan, .account-content .details .monthly-add-ons table tr th.current-plan, .account-content .details .monthly-add-ons table tr td.current-plan {
+      position: relative;
+      width: 60%; }
+    .account-content .details .plan-upgrade table tr th.plans div, .account-content .details .plan-upgrade table tr td.plans div, .account-content .details .monthly-add-ons table tr th.plans div, .account-content .details .monthly-add-ons table tr td.plans div {
+      margin-bottom: 10px; }
+      .account-content .details .plan-upgrade table tr th.plans div label, .account-content .details .plan-upgrade table tr td.plans div label, .account-content .details .monthly-add-ons table tr th.plans div label, .account-content .details .monthly-add-ons table tr td.plans div label {
+        font-family: "robotolight", Arial, Helvetica, sans-serif; }
+  .account-content .details .plan-upgrade table tr td .radio-wrapper .auto-reload, .account-content .details .monthly-add-ons table tr td .radio-wrapper .auto-reload {
+    margin-right: 25px; }
+  .account-content .details .plan-upgrade label, .account-content .details .monthly-add-ons label {
+    font-weight: normal; }
+    .account-content .details .plan-upgrade label.terms, .account-content .details .monthly-add-ons label.terms {
+      margin-bottom: 0; }
+  .account-content .details .plan-upgrade .hint, .account-content .details .monthly-add-ons .hint {
+    background-color: #E9F8FD;
+    border: 1px solid rgba(0, 166, 228, 0.38);
+    padding: 10px;
+    width: auto;
+    max-width: 300px;
+    color: #00A6E4;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 20;
+    display: none; }
+  .account-content .details .plan-upgrade .triangle, .account-content .details .monthly-add-ons .triangle {
+    position: absolute;
+    top: 10px;
+    left: 94px;
+    z-index: 22;
+    display: none; }
+  .account-content .details .plan-upgrade .buttons-wrapper .buttons, .account-content .details .monthly-add-ons .buttons-wrapper .buttons {
+    padding-right: 5px;
+    padding-bottom: 20px; }
+  .account-content .details .pay-bill-postpaid .enter-amount {
+    display: none; }
+  .account-content .details .bill-payment .enter-amount,
+  .account-content .details .bill-payment .payment-type-content {
+    display: none; }
+  .account-content .details .bill-payment .download-bill {
+    position: absolute;
+    top: 11px;
+    right: 20px;
+    z-index: 15; }
+  .account-content .details .increase-credit-limit .payment-type-wrapper,
+  .account-content .details .increase-credit-limit .saved-credit-card-wrapper,
+  .account-content .details .increase-credit-limit .total-payment-wrapper,
+  .account-content .details .increase-credit-limit .credit-card,
+  .account-content .details .increase-credit-limit .terms-condition-wrapper {
+    display: none; }
+  .account-content .details .increase-credit-limit #current-limit {
+    border-top: 0; }
+  .account-content .details .increase-credit-limit .with-hint {
+    position: relative; }
+  .account-content .details .increase-credit-limit .hint {
+    background-color: #E9F8FD;
+    border: 1px solid rgba(0, 166, 228, 0.38);
+    padding: 10px;
+    width: 230px;
+    color: #0faef2;
+    position: absolute;
+    top: 2px;
+    left: 47%;
+    z-index: 2000;
+    display: block; }
+    .account-content .details .increase-credit-limit .hint .triangle {
+      position: absolute;
+      top: 8px;
+      left: -7px;
+      z-index: 2200;
+      display: block; }
+  .account-content .details .increase-credit-limit .approval-hint {
+    background-color: #E9F8FD;
+    border: 1px solid rgba(0, 166, 228, 0.38);
+    padding: 10px;
+    width: 170px;
+    color: #0faef2;
+    position: absolute;
+    top: 45px;
+    left: 85px;
+    z-index: 2001;
+    display: block; }
+    .account-content .details .increase-credit-limit .approval-hint .triangle {
+      position: absolute;
+      top: -15px;
+      left: 80px;
+      z-index: 2201;
+      display: block; }
+  .account-content .details .increase-credit-limit-buttons .cards {
+    padding-right: 0; }
+  .account-content .details .increase-credit-limit-buttons .cards > * {
+    display: none; }
+  .account-content .details .increase-credit-limit-buttons .pay {
+    display: none; }
+  .account-content .details .manage-account .subtitle {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding: 12px 13px;
+    font-family: "robotoregular", Arial, Helvetica, sans-serif;
+    min-height: 56px;
+    background-color: #F4F5F7; }
+    .account-content .details .manage-account form .subtitle.first {
+      border-top: none; }
+  .account-content .details .manage-account form.highlighted input:active, .account-content .details .manage-account form.highlighted input:focus, .account-content .details .manage-account form.highlighted select:active, .account-content .details .manage-account form.highlighted select:focus {
+    border: 1px solid #0faef2; }
+  .account-content .details .manage-account .input-group input.first, .account-content .details .manage-account .input-group select.first {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+  .account-content .details .manage-account .editable {
+    display: none; }
+  .account-content .details .manage-account .puk-code {
+    display: none; }
+
+  .account-content .details .manage-account .my-children {
+    display: none; }
+    .account-content .details .manage-account .my-children .line {
+      font-size: 13px;
+      padding: 10px;
+      background-color: white;
+      margin: 0 12px; }
+      .account-content .details .manage-account .my-children .line.first-row {
+        background-color: #f5f5f5;
+        color: #999;
+        font-family: "robotoregular", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 12px; }
+      .account-content .details .manage-account .my-children .line .plan-details {
+        padding: 0; }
+      .account-content .details .manage-account .my-children .line .plan-details-content {
+        padding-left: 0;
+        padding-right: 0; }
+        .account-content .details .manage-account .my-children .line .plan-details-content > div {
+          padding-top: 10px;
+          padding-bottom: 10px; }
+      .account-content .details .manage-account .my-children .line .details-content {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      .account-content .details .manage-account .my-children .line .plan, .account-content .details .manage-account .my-children .line .name, .account-content .details .manage-account .my-children .line .account {
+        word-break: break-all; }
+        .account-content .details .manage-account .my-children .line .plan span, .account-content .details .manage-account .my-children .line .name span, .account-content .details .manage-account .my-children .line .account span {
+          white-space: nowrap; }
+      .account-content .details .manage-account .my-children .line .plan-details > div, .account-content .details .manage-account .my-children .line .plan-details-content > div {
+        padding-left: 10px;
+        padding-right: 10px; }
+      .account-content .details .manage-account .my-children .line .details, .account-content .details .manage-account .my-children .line .details-content {
+        padding-left: 10px;
+        padding-right: 10px; }
+      .account-content .details .manage-account .my-children .line .top-up-buttons {
+        text-align: right;
+        margin-top: 8px; }
+        .account-content .details .manage-account .my-children .line .top-up-buttons .first {
+          margin-bottom: 5px; }
+      .account-content .details .manage-account .my-children .line .notice {
+        font-size: 12px;
+        padding: 10px; }
+  .account-content .details .manage-account .zoom-voice form {
+    padding-bottom: 2px; }
+  .account-content .details .manage-account .zoom-voice .available-numbers {
+     }
+    .account-content .details .manage-account .zoom-voice .available-numbers .select-number {
+      background-color: #ffffff;
+      position: relative;
+      padding: 25px 15px;
+      min-height: 46px; }
+      .account-content .details .manage-account .zoom-voice .available-numbers .select-number label.subscribe {
+        position: absolute;
+        top: 25px;
+        left: 25px; }
+      .account-content .details .manage-account .zoom-voice .available-numbers .select-number .numbers {
+        display: inline-block;
+        padding-left: 34%; }
+        .account-content .details .manage-account .zoom-voice .available-numbers .select-number .numbers > div {
+          margin-bottom: 10px; }
+          .account-content .details .manage-account .zoom-voice .available-numbers .select-number .numbers > div.last {
+            margin-bottom: 0; }
+          .account-content .details .manage-account .zoom-voice .available-numbers .select-number .numbers > div label {
+            font-weight: normal; }
+    .account-content .details .manage-account .zoom-voice .available-numbers .button-wrapper {
+      padding-top: 15px;
+      padding-right: 25px;/*Changes Aug29*/
+      padding-bottom: 10px;
+      text-align: right; }
+  .account-content .details .manage-account .zoom-voice input {
+    padding-left: 38px; }
+    .account-content .details .manage-account .zoom-voice input.first {
+      border-bottom: 1px solid #E1E4E6; }
+    .account-content .details .manage-account .zoom-voice input.last {
+      border-bottom: 1px solid #E1E4E6; }
+    .account-content .details .manage-account .zoom-voice input#zoom-voice-search {
+      margin-bottom: 12px;
+      padding-right: 134px; }
+  .account-content .details .manage-account .zoom-voice .search-part {
+    position: absolute;
+    z-index: 20;
+    top: 17px;
+    left: 36%; }
+  .account-content .details .manage-account .zoom-voice .check-number {
+    position: absolute;
+    right: 30px;
+    top: 14px;
+    z-index: 10; }
+  .account-content .details .manage-account .puk-code {
+    background-color: #ffffff;
+    padding: 0 20px; }
+  .account-content .details .manage-account-buttons {
+    padding: 20px; }
+    .account-content .details .manage-account-buttons .save, .account-content .details .manage-account-buttons .cancel {
+      display: none; }
+  .account-content .details .pay-bill .confirmation, .account-content .details .pay-bill .complete {
+    display: none; }
+  .account-content .details .pay-bill.second .confirmation {
+    display: block; }
+    .account-content .details .pay-bill.second .confirmation .inner-confirmation {
+      overflow-x: auto; }
+  .account-content .details .pay-bill.second .buttons-wrapper {
+    padding: 25px; }/*Changes Aug29*/
+  .account-content .details .pay-bill .pay-now-buttons > div {
+    padding: 25px; }/*Changes Aug29*/
+  .account-content .details .pay-bill .confirmation .inner-confirmation, .account-content .details .pay-bill .complete-confirmation .inner-confirmation {
+    overflow-x: auto; }
+  .account-content .details .pay-bill .confirmation table, .account-content .details .pay-bill .complete-confirmation table {
+    overflow-x: auto; }
+    .account-content .details .pay-bill .confirmation table tr.total-payment, .account-content .details .pay-bill .complete-confirmation table tr.total-payment {
+      font-weight: bold; }
+      .account-content .details .pay-bill .confirmation table tr.total-payment .amount-wrapper, .account-content .details .pay-bill .complete-confirmation table tr.total-payment .amount-wrapper {
+        text-align: right; }
+      .account-content .details .pay-bill .confirmation table tr.total-payment .amount, .account-content .details .pay-bill .complete-confirmation table tr.total-payment .amount {
+        font-size: 1.5em; }
+      .account-content .details .pay-bill .confirmation table tr.total-payment sup, .account-content .details .pay-bill .complete-confirmation table tr.total-payment sup {
+        font-size: 0.8em; }
+    .account-content .details .pay-bill .confirmation table tr th, .account-content .details .pay-bill .complete-confirmation table tr th {
+      width: 35%;
+      padding-left: 25px; }/*Changes Aug29*/
+    .account-content .details .pay-bill .confirmation table tr td, .account-content .details .pay-bill .complete-confirmation table tr td {
+      padding-left: 25px; }/*Changes Aug29*/
+    .account-content .details .pay-bill .confirmation table tr th, .account-content .details .pay-bill .confirmation table tr td, .account-content .details .pay-bill .complete-confirmation table tr th, .account-content .details .pay-bill .complete-confirmation table tr td {
+      height: 46px; }
+  .account-content .details .pay-bill .confirmation .buttons-wrapper, .account-content .details .pay-bill .complete-confirmation .buttons-wrapper {
+    padding: 25px; }/*Changes Aug29*/
+  .account-content .details .pay-bill .complete {
+    padding: 20px 0 20px 0;
+    text-align: center; }
+    .account-content .details .pay-bill .complete.complete-confirmation .inner-confirmation {
+      margin-top: 30px; }
+      .account-content .details .pay-bill .complete.complete-confirmation .inner-confirmation table {
+        text-align: left; }
+    .account-content .details .pay-bill .complete .top-line {
+      font-size: 16px;
+      color: #0faef2;
+      font-family: "robotoregular", Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px 10px 0 10px;
+      margin: 0 20px; }
+    .account-content .details .pay-bill .complete .bottom-line {
+      background-color: #f5f5f5;
+      padding: 0 10px 20px 10px;
+      margin: 0 20px; }
+  .account-content .details .one-time #booster {
+    position: relative; }
+  .account-content .details .one-time .one-time-form {
+    display: none;
+    width: 100%; }
+  .account-content .details .one-time .buttons-wrapper {
+    display: none; }
+    .account-content .details .one-time .buttons-wrapper .pay, .account-content .details .one-time .buttons-wrapper .submit {
+      display: none; }
+  .account-content .details .one-time .pay-later {
+    display: none;
+    font-weight: bold;
+    color: #0faef2;
+    min-height: 46px;
+    padding-top: 13px;
+    padding-left: 35%;
+    padding-right: 30px;
+    cursor: pointer; }
+  .account-content .details .one-time .payment-type-wrapper {
+    display: block; }
+  .account-content .details .one-time .add-ons-prepaid-saved-credit-card-wrapper {
+    display: none; }
+  .account-content .details .one-time .one-time-saved-credit-card-wrapper {
+    display: none; }
+    .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits {
+      display: none; }
+      .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits .balance-wrapper {
+        padding-left: 35%;
+        padding-top: 15px;
+        padding-bottom: 5px; }
+      .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits .balance {
+        position: relative;
+        float: left;
+        width: 50%; }
+      .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits .button {
+        float: right;
+        width: 50%;
+        text-align: right;
+        padding-right: 20px; }
+      .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits .orange-tooltip {
+        position: relative;
+        border: 1px solid #F15A22;
+        padding: 7px;
+        background-color: rgba(255, 90, 34, 0.07);
+        width: auto;
+        display: inline-block;
+        margin-left: 10px; }
+      .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits .orange-tooltip-arrow {
+        position: absolute;
+        left: -7px;
+        top: 15px;
+        z-index: 1000; }
+  .account-content .details .one-time .credit-card,
+  .account-content .details .one-time .maybank2u {
+    display: none; }
+  .account-content .details .one-time .total-payment-wrapper {
+    display: block; }
+  .account-content .details .one-time .pay-now-buttons.add-ons-prepaid .cards .mastercard-wrapper {
+    display: none; }
+  .account-content .details .one-time .pay-now-buttons.add-ons-prepaid .cards .maybankcard-wrapper {
+    display: none; }
+    .account-content .details .one-time .pay-now-buttons.add-ons-prepaid .cards .maybankcard-wrapper .maybank {
+      height: 25px;
+      width: auto; }
+  .account-content .details .buy-online-die {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px; }
+    .account-content .details .buy-online-die.prepaid-add-ons .image-wrapper, .account-content .details .buy-online-die.vas .image-wrapper, .account-content .details .buy-online-die.one .image-wrapper, .account-content .details .buy-online-die.three .image-wrapper {
+      background-color: #0772a0; }
+    .account-content .details .buy-online-die.prepaid-reload .image-wrapper, .account-content .details .buy-online-die.two .image-wrapper, .account-content .details .buy-online-die.four .image-wrapper {
+      background-color: #0faef2; }
+    .account-content .details .buy-online-die.five .image-wrapper {
+      background: url("../images/buy_one-time_large.png") no-repeat;
+      background-size: cover;
+      background-position: center; }
+    .account-content .details .buy-online-die .image-wrapper {
+      height: 150px;
+      text-align: center; }
+      .account-content .details .buy-online-die .image-wrapper img {
+        margin-top: 5%;
+        display: inline-block;
+        height: 80%; }
+    .account-content .details .buy-online-die .text-wrapper {
+      background-color: #ffffff;
+      padding: 20px;
+      color: #333333;
+      box-sizing: content-box;
+      text-align: center; }
+      .account-content .details .buy-online-die .text-wrapper .title {
+        color: #0772a0;
+        padding-bottom: 10px;
+        font-family: "vagb", Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        text-transform: uppercase; }
+        .account-content .details .buy-online-die .text-wrapper .title.vas {
+          float: left; }
+    .account-content .details .buy-online-die .vas-one, .account-content .details .buy-online-die .vas-two {
+      float: right; }
+      .account-content .details .buy-online-die .vas-one input, .account-content .details .buy-online-die .vas-two input {
+        display: block; }
+      .account-content .details .buy-online-die .vas-one .toggle-group label, .account-content .details .buy-online-die .vas-two .toggle-group label {
+        text-transform: uppercase; }
+        .account-content .details .buy-online-die .vas-one .toggle-group label.toggle-off, .account-content .details .buy-online-die .vas-two .toggle-group label.toggle-off {
+          color: #0faef2;
+          padding-left: 32px !important; }
+        .account-content .details .buy-online-die .vas-one .toggle-group label.toggle-on, .account-content .details .buy-online-die .vas-two .toggle-group label.toggle-on {
+          padding-right: 35px !important; }
+      .account-content .details .buy-online-die .vas-one .toggle.btn-sm, .account-content .details .buy-online-die .vas-two .toggle.btn-sm {
+        min-height: 25px !important; }
+      .account-content .details .buy-online-die .vas-one .btn-primary, .account-content .details .buy-online-die .vas-two .btn-primary {
+        background: #0faef2 !important;
+        border-color: #0faef2 !important; }
+      .account-content .details .buy-online-die .vas-one .btn-sm, .account-content .details .buy-online-die .vas-two .btn-sm {
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        border-radius: 15px; }
+      .account-content .details .buy-online-die .vas-one .toggle-handle, .account-content .details .buy-online-die .vas-two .toggle-handle {
+        width: 47% !important; }
+  .account-content .details .my-order-history {
+    padding-top: 30px; }
+    .account-content .details .my-order-history .purchase-history, .account-content .details .my-order-history .bill-payment-history {
+      display: none; }
+    .account-content .details .my-order-history .die-table-wrapper table {
+      background-color: #ffffff; }
+    .account-content .details .my-order-history .die-table-wrapper .line {
+      font-size: 13px;
+      padding: 10px;
+      background-color: white;
+      margin: 0 12px; }
+      .account-content .details .my-order-history .die-table-wrapper .line div {
+        padding-left: 0;
+        padding-right: 10px; }
+        .account-content .details .my-order-history .die-table-wrapper .line div .number,
+        .account-content .details .my-order-history .die-table-wrapper .line div .buyer {
+          padding-right: 0 !important; }
+        .account-content .details .my-order-history .die-table-wrapper .line div .serial-number,
+        .account-content .details .my-order-history .die-table-wrapper .line div .buyer,
+        .account-content .details .my-order-history .die-table-wrapper .line div .order-id {
+          overflow-wrap: break-word;
+          word-wrap: break-word; }
+        .account-content .details .my-order-history .die-table-wrapper .line div .amount {
+          font-weight: bold; }
+    .account-content .details .my-order-history .die-table-wrapper .last-row {
+      font-size: 12px;
+      min-height: 20px; }
+      .account-content .details .my-order-history .die-table-wrapper .last-row .right {
+        text-align: right; }
+    .account-content .details .my-order-history .die-table-wrapper .first-row {
+      background-color: #f5f5f5;
+      color: #999;
+      font-size: 12px;
+      min-height: 30px;
+      height: auto;
+      font-family: "robotoregular", Arial, Helvetica, sans-serif;
+      font-weight: normal; }
+      .account-content .details .my-order-history .die-table-wrapper .first-row th {
+        font-weight: normal;
+        min-height: 30px;
+        height: auto; }
+  .account-content .details .reload-yes-credits .credit-card,
+  .account-content .details .reload-yes-credits .terms-condition-wrapper {
+    display: none; }
+  .account-content .details .reload-yes-credits .saved-credit-card-wrapper,
+  .account-content .details .reload-yes-credits .cards-wrapper {
+    display: none; }
+  .account-content .details .add-on-selection .buttons-wrapper .cards {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .account-content .details .add-on-selection .buttons-wrapper .cards > * {
+    display: none; }
+  .account-content .details .add-on-selection .buttons-wrapper .maybank {
+    height: 25px;
+    width: auto; }
+  .account-content .details .add-on-selection .buttons-wrapper .buttons .pay-blue, .account-content .details .add-on-selection .buttons-wrapper .buttons .pay-grey, .account-content .details .add-on-selection .buttons-wrapper .buttons .confirm {
+    display: none; }
+  .account-content .details .add-on-selection .selection.inner-die {
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-bottom: 1px solid #E1E4E6;
+    border-left: 1px solid #E1E4E6;
+    border-right: 1px solid #E1E4E6; }
+  .account-content .details .add-on-selection .selection table {
+    overflow-x: auto; }
+    .account-content .details .add-on-selection .selection table tr {
+      border-top: none; }
+      .account-content .details .add-on-selection .selection table tr th {
+        vertical-align: top;
+        padding: 15px; }
+      .account-content .details .add-on-selection .selection table tr td {
+        padding: 10px 15px; }
+        .account-content .details .add-on-selection .selection table tr td label span {
+          margin-top: 3px; }
+        .account-content .details .add-on-selection .selection table tr td label p.second-line {
+          padding-left: 31px;
+          line-height: 0.7em; }
+        .account-content .details .add-on-selection .selection table tr td p.bold {
+          display: inline-block;
+          font-size: 16px; }
+        .account-content .details .add-on-selection .selection table tr td p.second-line {
+          font-weight: normal;
+          line-height: 1.1em; }
+        .account-content .details .add-on-selection .selection table tr td.data-pack {
+          min-width: 250px; }
+  .account-content .details .add-on-selection .payment {
+    display: none; }
+    .account-content .details .add-on-selection .payment .purchase-add-on {
+      height: 46px; }
+      .account-content .details .add-on-selection .payment .purchase-add-on table {
+        background: #ffffff;
+        border-left: 1px solid #E1E4E6;
+        border-right: 1px solid #E1E4E6; }
+      .account-content .details .add-on-selection .payment .purchase-add-on label.add-one {
+        position: relative;
+        top: 0;
+        left: 0; }
+      .account-content .details .add-on-selection .payment .purchase-add-on td {
+        padding: 10px 15px; }
+        .account-content .details .add-on-selection .payment .purchase-add-on td.data-pack {
+          padding-left: 35%;
+          width: 60%; }
+        .account-content .details .add-on-selection .payment .purchase-add-on td label span {
+          margin-top: 3px; }
+        .account-content .details .add-on-selection .payment .purchase-add-on td label p.second-line {
+          padding-left: 31px;
+          line-height: 0.7em; }
+        .account-content .details .add-on-selection .payment .purchase-add-on td p.bold {
+          display: inline-block;
+          font-size: 16px; }
+        .account-content .details .add-on-selection .payment .purchase-add-on td p.second-line {
+          font-weight: normal;
+          line-height: 1.1em; }
+    .account-content .details .add-on-selection .payment .payment-type-wrapper, .account-content .details .add-on-selection .payment .total-payment-wrapper {
+      display: block; }
+    .account-content .details .add-on-selection .payment .yes-credits {
+      display: none; }
+      .account-content .details .add-on-selection .payment .yes-credits .balance-wrapper {
+        padding-left: 35%;
+        padding-top: 15px;
+        padding-bottom: 5px; }
+      .account-content .details .add-on-selection .payment .yes-credits .balance {
+        position: relative;
+        float: left;
+        width: 50%;
+        padding-top: 5px; }
+      .account-content .details .add-on-selection .payment .yes-credits .button {
+        float: right;
+        width: 50%;
+        text-align: right;
+        padding-right: 20px; }
+      .account-content .details .add-on-selection .payment .yes-credits .orange-tooltip {
+        position: relative;
+        border: 1px solid #F15A22;
+        padding: 7px;
+        background-color: rgba(255, 90, 34, 0.07);
+        width: auto;
+        display: inline-block;
+        margin-left: 10px; }
+      .account-content .details .add-on-selection .payment .yes-credits .orange-tooltip-arrow {
+        position: absolute;
+        left: -7px;
+        top: 15px;
+        z-index: 1000; }
+    .account-content .details .add-on-selection .payment .credit-card {
+      display: none; }
+    .account-content .details .add-on-selection .payment .maybank2u {
+      display: none; }
+    .account-content .details .add-on-selection .payment .expiry-date select {
+      display: inline-block;
+      width: 33%;
+      border: none; }
+      .account-content .details .add-on-selection .payment .expiry-date select#month, .account-content .details .add-on-selection .payment .expiry-date select#year {
+        padding-left: 1.1%; }
+    .account-content .details .add-on-selection .payment .payment-verification {
+      display: none; }
+  .account-content .details .add-on-selection .complete {
+    display: none; }
+  .account-content .personal-details .die-with-tabs ul li {
+    width: 25%; }
+  .account-content .personal-details .inner-die form.highlighted input:active, .account-content .personal-details .inner-die form.highlighted input:focus, .account-content .personal-details .inner-die form.highlighted select:active, .account-content .personal-details .inner-die form.highlighted select:focus {
+    border: 1px solid #0faef2; }
+  .account-content .personal-details .manage-delivery-addresses {
+    display: none; }
+    .account-content .personal-details .manage-delivery-addresses .no-delivery-address {
+      display: none;
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #ffffff; }
+    .account-content .personal-details .manage-delivery-addresses .subtitle {
+      padding: 0 !important; }
+      .account-content .personal-details .manage-delivery-addresses .subtitle .title-wrapper {
+        display: inline-block;
+        padding-left: 16px;
+        padding-right: 0;
+        padding-top: 12px; }
+      .account-content .personal-details .manage-delivery-addresses .subtitle .delivery-buttons-inline {
+        display: inline-block;
+        text-align: right;
+        padding-top: 9px;
+        padding-left: 0;
+        padding-right: 20px; }
+    
+    .account-content .personal-details .manage-delivery-addresses form .subtitle {
+      border-top: none; }
+    .account-content .personal-details .manage-delivery-addresses form .add-address {
+      display: none; }
+  .account-content .personal-details .manage-credit-card {
+    display: none; }
+    .account-content .personal-details .manage-credit-card .no-credit-card {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #ffffff; }
+    .account-content .personal-details .manage-credit-card .existing-credit-card {
+      display: none; }
+    .account-content .personal-details .manage-credit-card .expiry-date select {
+      display: inline-block;
+      width: 33%;
+      }
+      .account-content .personal-details .manage-credit-card .expiry-date select#month, .account-content .personal-details .manage-credit-card .expiry-date select#year {
+        padding-left: 1.1%; }
+  .account-content .personal-details .changing-password .note,
+  .account-content .personal-details .change-password .note {
+    padding-left: 35%;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    color: #0faef2;
+    font-weight: bold;
+    background-color: #ffffff; }
+  .account-content .personal-details .edit-photo-wrapper {
+    text-align: center;
+    background-color: #F7F7F7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid #E1E4E6;
+    border-right: 1px solid #E1E4E6; }
+    .account-content .personal-details .edit-photo-wrapper .edit-photo .left {
+      display: inline-block; }
+    .account-content .personal-details .edit-photo-wrapper .edit-photo .right {
+      display: inline-block;
+      text-align: left;
+      padding-left: 15px; }
+      .account-content .personal-details .edit-photo-wrapper .edit-photo .right .name {
+        font-size: 16px;
+        font-weight: bold; }
+  .account-content .personal-details .manage-personal-details-buttons {
+    padding: 25px; }/*Changes Aug29*/
+  .account-content .personal-details .manage-delivery-addresses-buttons {
+     padding: 25px; }/*Changes Aug29*/
+    .account-content .personal-details .manage-delivery-addresses-buttons .save {
+      display: none; }
+  .account-content .personal-details .manage-credit-card-buttons {
+    padding: 25px; }/*Changes Aug29*/
+    .account-content .personal-details .manage-credit-card-buttons .update, .account-content .personal-details .manage-credit-card-buttons .save, .account-content .personal-details .manage-credit-card-buttons .cancel {
+      display: none; }
+  .account-content .personal-details .change-password-buttons {
+    padding: 25px; }/*Changes Aug29*/
+
+.international-roaming .die-title {
+  width: 99.99%; }
+.international-roaming .note {
+  background-color: #fff;
+  padding: 12px 15px;
+  font-size: 13px;
+  width: 99.96%; }
+  .international-roaming .note.center {
+    text-align: center; }
+  .international-roaming .note.right {
+    padding-left: 35%; }
+  .international-roaming .note .title {
+    font-size: 14px;
+    font-weight: bold; }
+.international-roaming .buy-data-plans form {
+  padding-bottom: 10px; }
+.international-roaming .current-subscription,
+.international-roaming .after-select-country,
+.international-roaming .payment-details,
+.international-roaming .sufficient-wrapper,
+.international-roaming .purchase.buttons-wrapper,
+.international-roaming .confirmation-wrapper,
+.international-roaming .successful-msg {
+  display: none; }
+.international-roaming .confirmation-wrapper .buttons-wrapper,
+.international-roaming .purchase.buttons-wrapper {
+  margin-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 20px; }
+.international-roaming .purchase.buttons-wrapper {
+  padding-right: 20px;
+  padding-bottom: 20px; }
+.international-roaming .datepicker-wrapper {
+  background-color: #fff; }
+  .international-roaming .datepicker-wrapper .ico-calendar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    z-index: inherit; }
+  .international-roaming .datepicker-wrapper input.datepicker {
+    background-color: transparent !important; }
+
+/* Plan Upgrade Eligible */
+
+.plan-upgrade-eligible .select-plan-wrapper,
+.plan-upgrade-eligible .select-device-wrapper,
+.plan-upgrade-eligible .select-device-wrapper .saved-delivery-address,
+.plan-upgrade-eligible .select-device-wrapper .new-address,
+.plan-upgrade-eligible .select-device-wrapper .collection-address,
+.plan-upgrade-eligible .total-payment-wrapper,
+.plan-upgrade-eligible .total-payment-wrapper-bottom,
+.plan-upgrade-eligible .pay-now-buttons,
+.plan-upgrade-eligible .enter-details .selectPlan2 {
+  display: none;
+}
+.plan-upgrade-eligible .enter-details .selectPlan2,
+.plan-upgrade-eligible .enter-details .selectPlan {
+  padding-bottom: 7px;
+}
+
+.plan-upgrade-eligible .no-label .radio-wrapper label {
+  padding-left: 35px !important;
+} 
+.plan-upgrade-eligible .no-label .radio-wrapper label span {
+  margin-left: -30px;
+}
+
+@media (max-width: 767px) {
+  .plan-upgrade-eligible .no-label .radio-wrapper {
+    margin-top: 0 !important;
+  } 
+}
+
+.divider {
+  border-top: 1px solid #eee;
+}
+
+
+.change-plan-prepaid .check-details {
+  display: none;
+  padding-left: 35%;
+  padding-top: 5px; }
+.change-plan-prepaid .buttons-wrapper {
+  padding: 25px; }/*Changes Aug29*/
+
+@media (max-width: 767px) {
+  .change-plan-prepaid .check-details {
+    padding-left: 25px;/*Changes Aug29*/
+    padding-right: 25px; } } /*Changes Aug29*/
+@media (max-width: 480px) {
+  .change-plan-prepaid .buttons-wrapper button {
+    width: 100%;
+    margin-bottom: 10px; } }.express-reload {
+  background-color: #f5f5f5;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .express-reload .die-with-tabs.two ul.tabs li {
+    width: 50%; }
+  .express-reload .content {
+    border-left: none; }
+    .express-reload .content .express-reload-content .pay-bill-postpaid .one-time-form {
+      display: block; }
+    .express-reload .content .express-reload-content .pay-bill-postpaid .amount-due {
+      height: 46px;
+      position: relative;
+      background-color: #ffffff; }
+      .express-reload .content .express-reload-content .pay-bill-postpaid .amount-due .amount-due-label {
+        font-weight: bold;
+        padding-left: 16px;
+        padding-top: 12px; }
+      .express-reload .content .express-reload-content .pay-bill-postpaid .amount-due .amount-due-value {
+        padding-left: 35%;
+        position: absolute;
+        top: 12px; }
+  .express-reload .yes-id-verifying-wrapper {
+    padding-bottom: 30px;
+    position: relative; }
+    .express-reload .yes-id-verifying-wrapper .yes-id-verifying {
+      background-color: #f5f5f5; }
+      .express-reload .yes-id-verifying-wrapper .yes-id-verifying > label {
+        width: 32%; }
+    .express-reload .yes-id-verifying-wrapper #yes-id {
+      border: 0;
+      margin-right: 150px;
+      width: 51%;
+      padding-right: 90px; }
+    .express-reload .yes-id-verifying-wrapper .verify-button {
+      position: absolute;
+      top: 4px;
+      right: 0;
+      z-index: 999;
+      height: 47px;
+      width: 150px;
+      text-align: center; }
+    .express-reload .yes-id-verifying-wrapper .verified-label {
+      display: none;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      color: #ffffff;
+      background-color: #62BC59;
+      position: absolute;
+      top: 14px;
+      right: 160px;
+      padding: 3px 5px;
+      z-index: 1000; }
+  .express-reload .express-reload-content {
+    display: none; }
+    .express-reload .express-reload-content .valuepacks {
+      display: none; }
+    .express-reload .express-reload-content .reload-cards {
+      display: none; }
+      .express-reload .express-reload-content .reload-cards .activation-code .error {
+        min-height: 46px;
+        padding-top: 10px;
+        background-color: #ffffff;
+        font-size: 1em;
+        padding-left: 35%; }
+      .express-reload .express-reload-content .reload-cards .buttons-wrapper {
+        display: block;
+        text-align: right; }
+        .express-reload .express-reload-content .reload-cards .buttons-wrapper .reload-submit {
+          display: inline-block; }
+    .express-reload .express-reload-content .superboosters {
+      display: none; }
+    .express-reload .express-reload-content .selectable {
+      position: relative; }
+    .express-reload .express-reload-content .one-time-form .express-reload-card, .express-reload .express-reload-content .one-time-form .express-reload-card-superbooster {
+      display: none; }
+    .express-reload .express-reload-content .one-time-form .express-reload-maybank, .express-reload .express-reload-content .one-time-form .express-reload-maybank-superbooster {
+      display: none; }
+      .express-reload .express-reload-content .one-time-form .express-reload-maybank .maybank-note, .express-reload .express-reload-content .one-time-form .express-reload-maybank-superbooster .maybank-note {
+        min-height: 46px;
+        padding-top: 10px;
+        background-color: #ffffff;
+        font-size: 1em;
+        padding-left: 35%; }
+    .express-reload .express-reload-content .one-time-form .valuepacks-yes-credits {
+      display: none; }
+      .express-reload .express-reload-content .one-time-form .valuepacks-yes-credits .credit-balance {
+        display: none;
+        min-height: 46px;
+        padding-top: 10px;
+        background-color: #ffffff;
+        font-size: 1em;
+        padding-left: 35%;
+        padding-bottom: 10px; }
+        .express-reload .express-reload-content .one-time-form .valuepacks-yes-credits .credit-balance .green {
+          color: #62BC59; }
+    .express-reload .express-reload-content .one-time-form .total-payment .left {
+      padding-top: 7px; }
+    .express-reload .express-reload-content .one-time-form .cards .maybank {
+      width: 120px;
+      height: auto; }
+    .express-reload .express-reload-content .buttons-wrapper {
+      padding: 25px; }/*Changes Aug29*/
+      .express-reload .express-reload-content .buttons-wrapper .confirm {
+        display: none; }
+      .express-reload .express-reload-content .buttons-wrapper .cancel {
+        display: none; }
+
+.top-step-menu.valuepacks {
+  display: none; }
+.top-step-menu.reload-cards {
+  display: none; }
+  .top-step-menu.reload-cards .first {
+    margin-right: 245px; }
+    .top-step-menu.reload-cards .first .stick {
+      width: 250px; }
+.top-step-menu.superboosters {
+  display: none; }
+.top-step-menu.inner .items-wrapper {
+  margin-bottom: 0 !important; }
+.top-step-menu .items-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  padding-bottom: 60px;
+  margin-bottom: 30px; }
+  .top-step-menu .items-wrapper > div {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    margin-right: 120px;
+    position: relative; }
+    .top-step-menu .items-wrapper > div.last {
+      margin-right: 0; }
+  .top-step-menu .items-wrapper .stick {
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    background-color: #B4B5B7;
+    top: 50%;
+    left: 107%; }
+    .top-step-menu .items-wrapper .stick.blue-stick {
+      background-color: #0faef2; }
+  .top-step-menu .items-wrapper .text {
+    position: absolute;
+    width: 100px;
+    top: 115%;
+    left: -45%; }
+  .top-step-menu .items-wrapper img {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 50%;
+    width: auto; }
+    .top-step-menu .items-wrapper img.phone {
+      height: 60%; }
+  .top-step-menu .items-wrapper .active {
+    border: 4px solid #0faef2;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px; }
+    .top-step-menu .items-wrapper .active .text {
+      color: #0faef2; }
+    .top-step-menu .items-wrapper .active.first {
+      background: url("../images/phone.png") no-repeat;
+      background-size: 40%;
+      background-position: center; }
+    .top-step-menu .items-wrapper .active.second {
+      background: url("../images/pen_blue.png") no-repeat;
+      background-size: 50%;
+      background-position: center; }
+    .top-step-menu .items-wrapper .active.third {
+      background: url("../images/complete_tick_blue.png") no-repeat;
+      background-size: 50%;
+      background-position: center; }
+  .top-step-menu .items-wrapper .passive {
+    border: 4px solid #E1E4E6;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px; }
+    .top-step-menu .items-wrapper .passive .text {
+      color: #B4B5B7; }
+    .top-step-menu .items-wrapper .passive.second {
+      background: url("../images/pen_grey.png") no-repeat;
+      background-size: 50%;
+      background-position: center; }
+    .top-step-menu .items-wrapper .passive.third {
+      background: url("../images/complete_tick.png") no-repeat;
+      background-size: 50%;
+      background-position: center; }
+.top-step-menu.pay-bill {
+  display: block; }
+
+.account-top-menu {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-bottom: 1px solid #E1E4E6; }
+  .account-top-menu .account-wrapper p {
+    display: inline-block; }
+  .account-top-menu .account-wrapper .title {
+    padding: 0 0 5px 10px; }
+  .account-top-menu .account-wrapper .principal-account, .account-top-menu .account-wrapper .additional-account {
+    display: inline-block;
+    padding: 0; }
+  .account-top-menu .account-wrapper .current-account-item {
+    padding: 5px 30px 5px 10px;
+    border: 1px solid #E1E4E6;
+    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; }
+    .account-top-menu .account-wrapper .current-account-item[disabled], .account-top-menu .account-wrapper .current-account-item:disabled {
+      color: #bbb;
+      cursor: auto; }
+    .account-top-menu .account-wrapper .current-account-item.accounts-visible {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+    .account-top-menu .account-wrapper .current-account-item.accounts-invisible {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+    .account-top-menu .account-wrapper .current-account-item span {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden; }
+  .account-top-menu .account-wrapper .account-list-wrapper {
+    display: none;
+    border-left: 1px solid #E1E4E6;
+    border-bottom: 1px solid #E1E4E6;
+    border-right: 1px solid #E1E4E6;
+    position: absolute;
+    z-index: 10;
+    background-color: #ffffff;
+    width: 100%; }
+    .account-top-menu .account-wrapper .account-list-wrapper ul li {
+      font-weight: normal;
+      padding: 10px; }
+      .account-top-menu .account-wrapper .account-list-wrapper ul li.last {
+        border-bottom: none; }
+
+#yesCredits h4, #valuePack h4 {
+  font-size: 1em; }
+#yesCredits .modal-dialog, #valuePack .modal-dialog {
+  width: 480px; }
+#yesCredits .modal-body, #valuePack .modal-body {
+  padding: 0;
+  font-size: 1em; }
+#yesCredits .button-wrapper, #valuePack .button-wrapper {
+  padding: 5px 15px 15px 15px;
+  text-align: center; }
+#yesCredits form, #valuePack form {
+  width: 100%; }
+#yesCredits .input-group, #valuePack .input-group {
+  width: 100%;
+  position: relative; }
+  #yesCredits .input-group input, #yesCredits .input-group .total-payment, #valuePack .input-group input, #valuePack .input-group .total-payment {
+    background-color: #ffffff;
+    font-size: 1em;
+    padding-left: 35%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+    #yesCredits .input-group input.datepicker, #yesCredits .input-group .total-payment.datepicker, #valuePack .input-group input.datepicker, #valuePack .input-group .total-payment.datepicker {
+      background-color: transparent; }
+  #yesCredits .input-group select, #valuePack .input-group select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin-left: 34%;
+    border: 0;
+    font-size: 1em;
+    width: 65%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    padding-left: 1.1%; }
+  #yesCredits .input-group label, #valuePack .input-group label {
+    padding-left: 5px;
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    z-index: 10;
+    color: #333333; }
+  #yesCredits .input-group .select-arrows, #valuePack .input-group .select-arrows {
+    display: none; }
+  #yesCredits .input-group .ico-calendar, #valuePack .input-group .ico-calendar {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    z-index: inherit;
+    cursor: pointer; }
+  #yesCredits .input-group .info, #yesCredits .input-group .lock, #valuePack .input-group .info, #valuePack .input-group .lock {
+    margin-left: 10px;
+    z-index: 14; }
+  #yesCredits .input-group .info, #valuePack .input-group .info {
+    cursor: pointer; }
+  #yesCredits .input-group .lock, #valuePack .input-group .lock {
+    cursor: auto; }
+  #yesCredits .input-group .triangle, #valuePack .input-group .triangle {
+    position: absolute;
+    top: 39px;
+    left: 85px;
+    z-index: 22;
+    display: none; }
+
+.datepicker.datepicker-dropdown {
+  padding: 10px 15px !important;
+  z-index: 1060 !important; }
+.datepicker .datepicker-days table th.prev {
+  color: transparent;
+  background: url("../images/blue-left-arrow.png") no-repeat; }
+.datepicker .datepicker-days table th.next {
+  color: transparent;
+  background: url("../images/blue-right-arrow.png") no-repeat; }
+.datepicker .datepicker-days table td.day:hover {
+  background-color: #0faef2;
+  color: #ffffff; }
+.datepicker .datepicker-days table.table-condensed tbody tr td {
+  padding: 10px; }
+
+.cards-wrapper {
+  padding-left: 35%;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px; }
+  .cards-wrapper.no-border {
+    border: none; }
+  .cards-wrapper .mastercard, .cards-wrapper .visa {
+    border: none; }
+  .cards-wrapper .digicert {
+    height: 40px;
+    width: auto; }
+
+#activateVoice h4 {
+  font-size: 1em; }
+#activateVoice .modal-header {
+  position: relative; }
+  #activateVoice .modal-header img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: auto;
+    height: 40%;
+    cursor: pointer; }
+#activateVoice .modal-body p {
+  padding: 0; }
+#activateVoice .modal-footer {
+  padding-top: 15px;
+  border-top: 0;
+  text-align: center; }
+
+#addressSaving .modal-body {
+  text-align: center; }
+
+.modal-button-wrapper button {
+  width: 100%;
+  max-width: 260px;
+  padding: 15px;
+  margin-bottom: 10px; }
+
+#buyRoamingPlan p,
+#creditCardsDetails p, #errorMessage p,
+#enabledAutoBilling p, #disableAutoBilling p, #disabledAutoBilling p {
+  text-align: center; }
+
+.modal .modal-button-wrapper {
+  text-align: center; }
+
+#enableAutoBilling .modal-body .radio-wrapper {
+  padding-bottom: 12px; }
+  #enableAutoBilling .modal-body .radio-wrapper label {
+    padding-left: 30px; }
+    #enableAutoBilling .modal-body .radio-wrapper label span {
+      margin-left: -28px; }
+  #enableAutoBilling .modal-body .radio-wrapper .error-msg {
+    padding-left: 30px; }
+
+#payAmount .modal-button-wrapper {
+  padding: 0 15px 15px 15px; }
+
+.tooltip {
+  position: relative;
+  float: right;
+  z-index: 10; }
+
+.tooltip > .tooltip-inner {
+  background-color: #0faef2;
+  padding: 5px 7px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+
+.progress-bar.red .tooltip-inner {
+  background-color: #ec1067; }
+
+.progress-bar.red .popOver + .tooltip.top > .tooltip-arrow {
+  border-top: 5px solid #ec1067;
+  border-top-color: #ec1067; }
+
+.progress-bar.yellow .tooltip-inner {
+  background-color: #F15A22; }
+
+.progress-bar.yellow .popOver + .tooltip.top > .tooltip-arrow {
+  border-top: 5px solid #F15A22;
+  border-top-color: #F15A22; }
+
+.popOver + .tooltip.top > .tooltip-arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #0faef2;
+  border-top-color: #0faef2; }
+
+.progress {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  overflow: visible; }
+
+.progress-bar {
+  -webkit-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out; }
+
+@media (max-width: 1200px) {
+  .account-content .account-edit .left {
+    width: 100%; }
+  .account-content .account-edit .right {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px; } }
+@media (max-width: 991px) {
+  .login-content {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .cards-wrapper {
+    padding-left: 40%; }
+
+  .account-content .account-overview .account-subscription-details form .input-group .control-label {
+    width: 30%; }
+  .account-content .account-overview .account-subscription-details form .input-group select {
+    margin-left: 34%;
+    width: 66%; }
+.account-content .details .manage-account .my-children .line,
+  .account-content .account-overview .yes-plans-with-account .line {
+    padding: 10px; }
+    .account-content .details .manage-account .my-children .line.first-row > div > div,
+    .account-content .details .manage-account .my-children .line .number,
+    .account-content .details .manage-account .my-children .line .details-content,
+    .account-content .details .manage-account .my-children .line .details-content > div,
+    .account-content .details .manage-account .my-children .line .product-detail,
+    .account-content .details .manage-account .my-children .line .plan-details-content > div,
+    .account-content .account-overview .yes-plans-with-account .line.first-row > div > div,
+    .account-content .account-overview .yes-plans-with-account .line .number,
+    .account-content .account-overview .yes-plans-with-account .line .details-content,
+    .account-content .account-overview .yes-plans-with-account .line .details-content > div,
+    .account-content .account-overview .yes-plans-with-account .line .product-detail,
+    .account-content .account-overview .yes-plans-with-account .line .plan-details-content > div {
+      padding: 0; }
+    .account-content .details .manage-account .my-children .line .top-up-buttons,
+    .account-content .account-overview .yes-plans-with-account .line .top-up-buttons {
+      text-align: center; }
+      .account-content .details .manage-account .my-children .line .top-up-buttons .first,
+      .account-content .account-overview .yes-plans-with-account .line .top-up-buttons .first {
+        margin-top: 5px; }
+  .account-content .has-account .button-wrapper {
+    text-align: center; }
+  .account-content .has-account .account-info .button-wrapper,
+  .account-content .has-account .tariff .button-wrapper {
+    padding: 20px 20px 0 20px; }
+  .account-content .account-edit .second-die .enter-yes-id-wrapper {
+    padding-left: 0; }
+    .account-content .account-edit .second-die .enter-yes-id-wrapper .status-wrapper {
+      text-align: left;
+      position: inherit;
+      padding: 5px 4%;
+      left: 10px; }
+    .account-content .account-edit .second-die .enter-yes-id-wrapper .enter-yes-id {
+      padding: 10px 4%; }
+  .account-content .account-edit .second-die .confirm-yes-id-wrapper .confirm-yes-id {
+    padding: 10px 4%; }
+  .account-content .account-edit .second-die .input-wrapper input {
+    float: none;
+    margin: 5px 4%; }
+  .account-content .account-edit .second-die .input-wrapper img {
+    top: 66px;
+    left: 168px; }
+  .account-content .details .increase-credit-limit .hint {
+    left: 55%; }
+  .account-content .details .increase-credit-limit-buttons .buttons {
+    margin-top: 10px; }
+  .account-content .details .one-time .buttons-wrapper .buttons {
+    padding: 25px; }/*Changes Aug29*/
+  .account-content .details .one-time .yes-credits .balance {
+    width: 100%;
+    padding-left: 30px; }
+  .account-content .details .one-time .yes-credits .button {
+    margin-top: 50px;
+    float: none;
+    display: block; }
+  .account-content .details .add-on-selection .payment .yes-credits .balance {
+    width: 100%;
+    padding-left: 30px; }
+  .account-content .details .add-on-selection .payment .yes-credits .button {
+    margin-top: 50px;
+    float: none;
+    display: block; }
+  .account-content .details .my-order-history .die-table-wrapper .line .number, .account-content .details .my-order-history .die-table-wrapper .line .product-detail > div {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .account-content .details .sms-usage .die-table-wrapper .line .number, .account-content .details .sms-usage .die-table-wrapper .line .product-detail > div,
+  .account-content .details .voice-usage .die-table-wrapper .line .number,
+  .account-content .details .voice-usage .die-table-wrapper .line .product-detail > div,
+  .account-content .details .data-usage .die-table-wrapper .line .number,
+  .account-content .details .data-usage .die-table-wrapper .line .product-detail > div {
+    padding-top: 0;
+    padding-bottom: 0; }
+
+  .account-top-menu .principal-account-wrapper {
+    margin-bottom: 10px; } }
+@media (max-width: 855px) {
+  .login-content,
+  .account-content {
+    top: 49px;
+    margin-bottom: 49px; } }
+@media (max-width: 767px) {
+  .glyphicon.glyphicon-eye-open {
+    right: 7%;
+    top: 57px; }
+
+  .account-overview-die .buttons-wrapper .buttons {
+    padding-right: 0; }
+
+  .select {
+    padding-left: 15px;
+    padding-right: 20px;
+    margin: 0 0 15px 0; /*Changes Aug29*/
+    float: none;
+    width: 100%; }/*Changes Aug29*/
+
+	/*Changes Aug29*/
+  .account-content .details .pay-bill .confirmation table tr.total-payment th, .account-content .details .pay-bill .complete-confirmation table tr.total-payment th {
+    display: none;}/**/
+  .booster-plan,
+  .reload-plan,
+  .reload-amount-plan {
+    width: 92%;
+    top: 86px;
+    right: 4%; }
+
+  #amount,
+  .radio-wrapper.save-cc {
+    margin-top: 5px !important; }
+
+  .international-roaming .note {
+    border-top: 0; }
+	 international-roaming .note,
+    .international-roaming .note.right {
+      padding-left: 25px;/*Changes Aug29*/
+      padding-right: 25px; }/*Changes Aug29*/
+  .international-roaming .datepicker-wrapper .ico-calendar {
+    top: 50px; }
+
+  .express-reload .yes-id-verifying-wrapper .yes-id-verifying > label {
+    padding-left: 20px !important; }
+
+  .validate-yes-id-password {
+    top: 49px;
+    right: 24px; }
+
+  .top-step-menu.reload-cards .first {
+    margin-right: 100px; }
+    .top-step-menu.reload-cards .first .stick {
+      width: 105px; }
+  .top-step-menu .items-wrapper > div {
+    margin-right: 45px;
+    width: 50px;
+    height: 50px; }
+  .top-step-menu .items-wrapper .stick {
+    width: 50px; }
+  .top-step-menu .items-wrapper .text {
+    left: -70%; }
+
+  .bill-payment .download-bill {
+    top: 51px !important; }
+
+  select#month {
+    margin-right: 0; }
+
+  .cards-wrapper {
+    padding-left: 15px;
+    text-align: center; }
+
+  .content {
+    padding: 15px 15px 30px 15px; }
+    .content.account-overview {
+      padding-left: 0;
+      padding-right: 0; }
+    .content .left {
+      padding-right: 0; }
+    .content .right {
+      padding-left: 0; }
+
+  .login-content .login, .login-content .registration {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    border-radius: 0px;
+    padding: 10px 30px 30px;
+    height: auto; }
+
+  .account-top-menu {
+    margin-bottom: 15px; }
+
+  .account-content .inner-ul {
+    display: block; }
+  .account-content .mobile-view .current-menu-item {
+    padding: 20px;
+    font-size: 18px;
+    color: #0faef2;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #E1E4E6;
+    cursor: pointer;
+    background: url("../images/icon-arrow-menu.png") no-repeat;
+    background-position: 95% 50%;
+    font-family: "vag", Arial, Helvetica, sans-serif; }
+  .account-content .mobile-view .menu-wrapper {
+    display: none; }
+  .account-content .no-account .left {
+    text-align: center;
+    padding-right: 15px; }
+  .account-content .no-account .right {
+    text-align: center;
+    padding-left: 15px; }
+  .account-content .account-edit .buttons-wrapper {
+    text-align: center; }
+  .account-content .account-edit .second-die .enter-yes-id-wrapper {
+    padding: 0; }
+  .account-content .account-edit .second-die .confirm-yes-id-wrapper {
+    padding: 0; }
+  .account-content .details .details-wrapper {
+    padding-left: 0;
+    padding-right: 0; }
+  .account-content .details .plan-upgrade .buttons-wrapper .buttons, .account-content .details .monthly-add-ons .buttons-wrapper .buttons {
+    padding-right: 0; }
+  .account-content .details .increase-credit-limit-buttons .cards, .account-content .details .pay-now-buttons .cards {
+    text-align: center; }
+  .account-content .details .increase-credit-limit-buttons .buttons, .account-content .details .pay-now-buttons .buttons {
+    margin-top: 15px;
+    padding-right: 0; }
+  .account-content .details .increase-credit-limit .hint {
+    top: 42px;
+    left: 31%; }
+  .account-content .details .increase-credit-limit .payment-type-wrapper .radio-wrapper {
+    margin-top: 0; }
+  .account-content .details .increase-credit-limit .payment-type-wrapper.two {
+    padding-top: 40px; }
+    .account-content .details .increase-credit-limit .payment-type-wrapper.two .radio-wrapper {
+      margin-top: 0; }
+  .account-content .details .input-group input, .account-content .details .input-group select, .account-content .details .input-group .radio-wrapper {
+     margin: 40px 0 5px 0; /*Changes Aug29*/
+    padding-left: 16px;
+    float: none;
+    width: 100%; }/*Changes Aug29*/
+    .account-content .details .input-group input#month, .account-content .details .input-group select#month, .account-content .details .input-group .radio-wrapper#month {
+      /*removed all*/ }/*Changes Aug29*/
+    .account-content .details .input-group input#year, .account-content .details .input-group select#year, .account-content .details .input-group .radio-wrapper#year {
+      float: right; }
+  .account-content .details .input-group .total-payment {
+    padding: 25px 0; } /*Changes Aug29*/
+    .account-content .details .input-group .total-payment .right {
+      padding-top: 0; }
+  .account-content .details .input-group .radio-wrapper {
+    padding-top: 4px;
+    padding-bottom: 0; 
+    padding-left: 0 !important;} /*Changes Aug29*/
+	
+	 /*Changes Aug29*/
+  .account-content .details .input-group {
+      padding: 0 25px; !important}
+  .account-content .details .input-group .radio-wrapper label {
+    width: 100%;}
+  .inner-confirmation table td,
+  .inner-confirmation table th {
+    word-break: break-word;}
+  .col-xs-12.buttons-wrapper {
+    padding: 25px;}
+  /**/   
+  .account-content .details .input-group.date-of-birth {
+    background-color: #f5f5f5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #E1E4E6; }
+    .account-content .details .input-group.date-of-birth select {
+      width: 33.33%; }
+      .account-content .details .input-group.date-of-birth select#day {
+        margin-left: 0;
+        border-left: 1px solid #E1E4E6;
+        border-right: 1px solid #E1E4E6;
+        border-top: 1px solid #E1E4E6; }
+      .account-content .details .input-group.date-of-birth select#month {
+        border-top: 1px solid #E1E4E6;
+        border-right: 1px solid #E1E4E6; }
+      .account-content .details .input-group.date-of-birth select#year {
+        border-top: 1px solid #E1E4E6;
+        border-right: 1px solid #E1E4E6; }
+  .account-content .details .input-group label {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 5px 0 0 25px; }/*Changes Aug29*/
+  .account-content .details .input-group.expiry-date select, .account-content .details .input-group.date-of-birth select {
+    width: 48%; }/*Changes Aug29*/
+  
+  .account-content .details .manage-account form .subtitle {
+    font-size: 1.2em; }
+  .account-content .details .manage-account .billing-information input.first {
+    border-top: 1px solid #E1E4E6; }
+  .account-content .details .manage-account .zoom-voice .check-number {
+    top: 49px;
+     right: 35px; }/*Changes Aug29*/
+  .account-content .details .manage-account .zoom-voice .available-numbers .subtitle {
+    padding-top: 15px; }
+  .account-content .details .manage-account .zoom-voice .available-numbers .select-number {
+    margin-top: 40px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+    .account-content .details .manage-account .zoom-voice .available-numbers .select-number label.subscribe {
+      top: -30px; }
+    .account-content .details .manage-account .zoom-voice .available-numbers .select-number .numbers {
+      padding-left: 15px; }
+  .account-content .details .manage-account .zoom-voice input {
+    padding-left: 46px;
+    border-top: 1px solid #E1E4E6; }
+    .account-content .details .manage-account .zoom-voice input.first {
+      border-top: 1px solid #E1E4E6;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+  .account-content .details .manage-account .zoom-voice .search-part {
+    position: absolute;
+    z-index: 20;
+    top: 53px;
+    left: 40px; }/*Changes Aug29*/
+  .account-content .details .pay-bill.die-with-tabs .inner-die.enter-details input#amount {
+    margin-top: 5px; }
+  .account-content .details .pay-bill.second .buttons-wrapper button {
+    width: 100%; }
+  .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits .input-group {
+    padding-top: 40px; }
+  .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits .balance-wrapper {
+    padding-left: 0px; padding-top:10px; }
+  .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits .balance {
+    width: 50%;
+    padding-left: 0; }
+  .account-content .details .one-time .one-time-saved-credit-card-wrapper.yes-credits .button {
+    margin-top: 0;
+    float: left; }
+  .account-content .details .one-time .one-time-form .input-group.expiry-date select#month {
+    margin-right: 0; }
+  .account-content .details .one-time #booster {
+    padding-top: 40px; }
+  .account-content .details .one-time .pay-later {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 0; }
+  .account-content .details .reload-yes-credits .input-group input, .account-content .details .reload-yes-credits .input-group .select, .account-content .details .reload-yes-credits .input-group .total-payment {
+    padding-left: 15px; }
+  .account-content .details .reload-yes-credits .input-group .radio-wrapper {
+    padding-left: 15px; }
+  .account-content .details .reload-yes-credits #reload-yes-credit {
+    padding-top: 40px; }
+  .account-content .details .reload-yes-credits .reload-plan {
+    width: 100%;
+    top: 86px; }
+  .account-content .details .add-on-selection .buttons-wrapper .buttons {
+    margin: 0; }
+  .account-content .details .add-on-selection .payment .purchase-add-on {
+    padding-top: 40px;
+    padding-left: 0; }
+    .account-content .details .add-on-selection .payment .purchase-add-on table {
+      border: 1px solid #E1E4E6; }
+      .account-content .details .add-on-selection .payment .purchase-add-on table .data-pack {
+        padding-left: 15px;
+        width: auto; }
+  .account-content .details .add-on-selection .payment .yes-credits .input-group {
+    padding-top: 40px; }
+  .account-content .details .add-on-selection .payment .yes-credits .balance-wrapper {
+    padding-left: 36px; }
+  .account-content .details .add-on-selection .payment .yes-credits .balance {
+    width: 50%;
+    padding-left: 0; }
+  .account-content .details .add-on-selection .payment .yes-credits .button {
+    margin-top: 0;
+    float: left; }
+  .account-content .details .buy-online-die .image-wrapper img {
+    margin-top: 2%; }
+  .account-content .details .my-order-history .die-table-wrapper .line .number, .account-content .details .my-order-history .die-table-wrapper .line .product-detail > div {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .account-content .details .voice-usage .die-table-wrapper .line.first-row .number, .account-content .details .voice-usage .die-table-wrapper .line.first-row .product-detail > div,
+  .account-content .details .sms-usage .die-table-wrapper .line.first-row .number,
+  .account-content .details .sms-usage .die-table-wrapper .line.first-row .product-detail > div,
+  .account-content .details .data-usage .die-table-wrapper .line.first-row .number,
+  .account-content .details .data-usage .die-table-wrapper .line.first-row .product-detail > div {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .account-content .details .voice-usage .die-table-wrapper .line .number, .account-content .details .voice-usage .die-table-wrapper .line .product-detail > div,
+  .account-content .details .sms-usage .die-table-wrapper .line .number,
+  .account-content .details .sms-usage .die-table-wrapper .line .product-detail > div,
+  .account-content .details .data-usage .die-table-wrapper .line .number,
+  .account-content .details .data-usage .die-table-wrapper .line .product-detail > div {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .account-content .personal-details .manage-credit-card #name-on-card {
+    border-top: 1px solid #E1E4E6; }
+  .account-content .personal-details .change-password #current-password,
+  .account-content .personal-details .changing-password #current-password {
+    border-top: 1px solid #E1E4E6; }
+  .account-content .personal-details .change-password .note,
+  .account-content .personal-details .changing-password .note {
+    margin-top: 15px;/*Changes Aug29*/
+    padding-left: 25px; }/*Changes Aug29*/
+  .account-content .personal-details .edit-photo-wrapper {
+    border-bottom: 1px solid #E1E4E6; }
+  .account-content .account-overview .account-subscription-details form .input-group .control-label {
+    width: 100%;
+    left: 0;
+    padding: 10px 0 0 15px;
+    top: 0; }
+  .account-content .account-overview .account-subscription-details form .input-group img {
+    top: 66% !important; }
+  .account-content .account-overview .account-subscription-details form .input-group select {
+    width: 100%;
+    margin: 35px 0 0 0;
+    padding-left: 16px; }
+
+  .express-reload .yes-id-verifying-wrapper #yes-id {
+    width: 90%;
+    margin-left: 0;/*Changes Aug29*/
+    margin-right: 0; }
+  .express-reload .yes-id-verifying-wrapper .verify-button {
+    margin-top: 35px;
+    width: auto; }
+  .express-reload .yes-id-verifying-wrapper .verified-label {
+    margin-top: 35px;
+    right: 110px; }
+  .express-reload .yes-id-verifying-wrapper label {
+    background-color: transparent !important;
+    border-width: 0 !important; }
+  .express-reload .express-reload-content .pay-bill-postpaid .amount-due .amount-due-value {
+    padding-left: 50% !important; }
+  .express-reload .express-reload-content #reload-amount, .express-reload .express-reload-content #valuepack-amount, .express-reload .express-reload-content .selectable {
+    padding-top: 40px; }
+  .express-reload .express-reload-content .one-time-form .payment-type-wrapper.last {
+    border-bottom: none; }
+  .express-reload .express-reload-content .one-time-form .express-reload-maybank .maybank-note,
+  .express-reload .express-reload-content .one-time-form .express-reload-maybank-superbooster .maybank-note,
+  .express-reload .express-reload-content .one-time-form .valuepacks-yes-credits .credit-balance {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 0; }
+  .express-reload .express-reload-content .reload-cards .activation-code .error {
+    padding-left: 25px;
+    padding-right: 25px; }
+
+  .modal .modal-dialog {
+    margin: 30px auto; }
+  .modal .modal-footer button.confirm {
+    margin-top: 15px; } }
+@media (max-width: 365px) {
+  .amount-wrapper > div, .amount-wrapper .button-wrapper {
+    width: 100% !important;
+    text-align: center !important; }
+    .amount-wrapper > div button, .amount-wrapper .button-wrapper button {
+      max-width: 260px;
+      width: 100% !important; }
+  .amount-wrapper .button-wrapper {
+    padding: 15px !important; }
+
+  .addon-wrapper > div,
+  .bill-summary .description-wrapper {
+    width: 100%; }
+
+  .usage-summary .addon-wrapper > div {
+    text-align: center; }
+  .usage-summary .addon-wrapper .button-wrapper {
+    padding: 0 10px 20px 10px !important; }
+
+  .usage-summary .addon-wrapper .button-wrapper,
+  .bill-summary .button-wrapper,
+  .account-subscription-details .button-wrapper {
+    width: 100%;
+    text-align: center; }
+    .usage-summary .addon-wrapper .button-wrapper button,
+    .bill-summary .button-wrapper button,
+    .account-subscription-details .button-wrapper button {
+      width: 100%;
+      max-width: 260px;
+      margin-top: 5px;
+      float: none !important; } }
+@media (min-width: 768px) {
+  .date-of-birth select, .expiry-date select {
+    width: 30.95% !important; } }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .express-reload .yes-id-verifying-wrapper .yes-id-verifying > label {
+    width: 27%; } }
+@media (max-width: 383px) {
+  .express-reload .yes-id-verifying-wrapper .yes-id-verifying > label {
+    top: -21px; } }
+@media (min-width: 768px) and (max-width: 1080px) {
+  .login-content .login-button {
+    width: 100%; }
+    .login-content .login-button .blue-button, .login-content .login-button .primary-button, .login-content .login-button .secondary-button, .login-content .login-button .grey-button, .login-content .login-button .light-grey-button {
+      width: 50%; }
+  .login-content .login-forgot {
+    width: 100%;
+    text-align: center;
+    float: none; } }
+@media (max-width: 440px) {
+  .account-content .details .my-order-history .die-table-wrapper .line .product-detail {
+    width: 88%; }
+  .account-content .details .my-order-history .die-table-wrapper .line.last-row div {
+    width: 100%;
+    text-align: center; }
+  .account-content .details .voice-usage .die-table-wrapper .line .product-detail {
+    width: 88%; }
+
+  .mobile-hide {
+    display: none; } }
+@media (max-width: 480px) {
+
+	  .account-content .details .manage-account form .address .subtitle {
+    height: 80px !important; }
+ 
+  .account-content .personal-details .manage-delivery-addresses .subtitle .delivery-buttons-inline {
+    width: 100% !important; }
+	
+.manage-my-account .col-xs-6 {
+    width: 100%; }  .account-content .account-overview .account-plan-details table td,
+  .account-content .account-overview .account-subscription-details table td {
+    width: 50%; }
+  .account-content .account-overview .account-plan-details table .yes-id .small-button,
+  .account-content .account-overview .account-subscription-details table .yes-id .small-button {
+    float: none; }
+
+  .full-width {
+    width: 100% !important; }
+
+  .login-content .blue-button, .login-content .primary-button, .login-content .secondary-button, .login-content .grey-button, .login-content .light-grey-button,
+  .login-content .login-button,
+  .login-content .login-forgot {
+    width: 100% !important;
+    text-align: center;
+    display: block;
+    float: none;
+    margin: 0 !important; }
+  .login-content .login-remember {
+    padding-top: 10px; }
+  .login-content .login .form-controls a {
+    width: 100%; }
+
+  .fpw-button .cancel {
+    margin: 10px 0 0 0; }
+
+  .grey-button.cancel {
+    width: 100%; }
+
+  .account-content .account-edit .right {
+    padding-top: 0; }
+    .account-content .account-edit .right button {
+      margin-top: 15px;
+      width: 100%; }
+  .account-content .account-edit .buttons-wrapper .submit {
+    margin-bottom: 15px; }
+  .account-content .account-overview .bill-summary .amount-wrapper .button-wrapper .blue-button, .account-content .account-overview .bill-summary .amount-wrapper .button-wrapper .primary-button, .account-content .account-overview .bill-summary .amount-wrapper .button-wrapper .secondary-button, .account-content .account-overview .bill-summary .amount-wrapper .button-wrapper .grey-button, .account-content .account-overview .bill-summary .amount-wrapper .button-wrapper .light-grey-button {
+    width: auto; }
+  .account-content .details .monthly-add-ons .radio-wrapper .auto-reload {
+    margin-right: 0; }
+  .account-content .details .buttons-wrapper .grey-button {
+    margin-left: 0;
+    margin-top: 10px; }
+  .account-content .details.personal-details .blue-button, .account-content .details.personal-details .primary-button, .account-content .details.personal-details .secondary-button, .account-content .details.personal-details .grey-button, .account-content .details.personal-details .light-grey-button {
+    margin-left: 0;
+    margin-top: 10px; }
+  .account-content .details .add-on-selection .buttons-wrapper .buttons {
+    padding-left: 0; }
+    .account-content .details .add-on-selection .buttons-wrapper .buttons button {
+      width: 100%; }
+  .account-content .details .add-on-selection .payment .yes-credits .balance, .account-content .details .add-on-selection .payment .yes-credits .button {
+    float: none;
+    text-align: center;
+    display: block;
+    width: 100%; }
+  .account-content .details .add-on-selection .payment .yes-credits .button {
+    margin-top: 15px; }
+  .account-content .details .manage-account form .address .subtitle {
+    height: 120px; }
+  .account-content .details .manage-account .zoom-voice .available-numbers .button-wrapper {
+    padding-left: 25px; }/*Changes Aug29*/
+    .account-content .details .manage-account .zoom-voice .available-numbers .button-wrapper button {
+      width: 100%; }
+  .account-content .details .buttons-wrapper .buttons {
+    padding-left: 0; }
+    .account-content .details .buttons-wrapper .buttons button {
+      width: 100%;
+      margin-bottom: 10px; }
+  .account-content .details table tr td.statement {
+    text-align: center; }
+    .account-content .details table tr td.statement a.link {
+      float: none;
+      display: block;
+      padding-top: 5px; }
+
+  .modal .modal-dialog {
+    width: 100%;
+    margin: 30px auto; }
+
+  #yesCredits .modal-dialog {
+    width: 100%;
+    margin: 30px auto; }
+
+  .account-content .account-overview .account-plan-details .button-wrapper {
+    text-align: left;
+    padding-top: 6px; }
+  .account-content .account-overview .account-plan-details table td > div {
+    width: 100%; } }
+    
+    
+.account-content .reload-yes-credits .payment-type-wrapper {display: table !important;}
+
+/*# sourceMappingURL=styles.css.map */
+/* Overview Page - Add-On, Bill Payment Sections */
+
+.welcomeBanner {
+  background-color: #0772a0;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+/*Changes Oct31*/
+.overviewBanner {
+  position: relative;
+  background-color: #f5f5f5;
+}/**/
+.upgrade-btn-sect {
+  position: absolute;
+  bottom: 6%;
+  right: 14%;
+  z-index: 700;
+}
+@media (max-width: 855px) {
+  .upgrade-btn-sect {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+  }
+}
+.upgrade-btn-sect.no-upgrade {
+  display: none;
+}
+.sect-title .long-title {
+  color: #0faef2;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.prepaid-lte-sect,
+.lte-sect {
+  text-align: center;
+  background-color: #fff;
+  padding: 15px 10px 25px 10px;
+}
+.prepaid-lte-sect img,
+.add-on-sect img {
+  max-width: 100%;
+  width: auto;
+}
+
+.prepaid-lte-sect,
+.lte-sect .add-on-row {
+  text-align:center;}
+
+.lte-sect .add-on-col {
+  width:160px;
+  margin:30px 6px 0;
+  display:inline-block;
+  vertical-align:top;}
+
+.prepaid-lte-sect .plan-col a:hover,
+.lte-sect .add-on-col a:hover {
+  text-decoration: none !important;
+}
+  
+.lte-sect .add-on-panel {
+  max-width:160px;
+  margin:0 auto;
+  background-color:#f5f5f5;}
+
+.lte-sect .add-on-panel .panel-header {
+  padding:20px;
+  text-align:center;}
+
+.lte-sect .add-on-panel .panel-body {padding:15px 20px;}
+.lte-sect .add-on-panel .body-row {margin-top:15px}
+.lte-sect .add-on-panel .body-row:first-child {margin-top:0}
+
+.lte-sect .add-on-panel .add-on-quota {
+  font-family:'robotobold',Arial,Helvetica,sans-serif;
+  font-size:13px;line-height:1}
+
+.lte-sect .add-on-panel .add-on-quota .quota-main {
+  margin-bottom:5px;
+  font-size:26px}
+
+.lte-sect .add-on-panel .or-separator {
+  color:#9d9d9d;
+  font-family:'robotobold',Arial,Helvetica,sans-serif;
+  font-size:18px}
+  
+.lte-sect .add-on-panel .plus-separator:before {
+  content:'+';
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  display:inline-block;
+  background-color:#9d9d9d;
+  color:#fff;
+  font-family:'robotobold',Arial,Helvetica,sans-serif;
+  font-size:24px;
+  line-height:22px;
+  text-align:center}
+
+.lte-sect .add-on-panel.orange .panel-header {background-color:#f35906}
+.lte-sect .add-on-panel.orange .add-on-quota {color:#f35906}
+.lte-sect .add-on-panel.purple .panel-header {background-color:#6a32a3}
+.lte-sect .add-on-panel.purple .add-on-quota {color:#6a32a3}
+.lte-sect .add-on-panel.green .panel-header {background-color:#5dbd3e}
+.lte-sect .add-on-panel.green .add-on-quota {color:#5dbd3e}
+.lte-sect .add-on-panel.magenta .panel-header {background-color:#ee005d}
+.lte-sect .add-on-panel.magenta .add-on-quota {color:#ee005d}
+.lte-sect .add-on-panel.teal .panel-header {background-color:#0490a4}
+.lte-sect .add-on-panel.teal .add-on-quota {color:#0490a4}
+
+.lte-sect .add-on-notes { 
+  margin-top:30px;
+  font-size:11px}
+ 
+@media only screen and (max-width:1024px){
+  .lte-sect .add-on-row {
+    max-width:600px;
+    margin:0 auto}
+}
+
+.sect-thumb {
+  float: left;
+  width: 25%;
+  height: 285px;
+  overflow: hidden;
+}
+
+.sect-thumb img {
+  height: auto;
+  width: auto;
+}
+
+.sect-right {
+  float: right;
+  width: 75%;
+  padding: 10px 25px;
+}
+
+.billpayment-sect {
+    margin-top: 30px;
+    overflow: auto;
+    padding: 0;
+    background-color: #fff;
+}
+
+.billpayment-sect .bp-btns {
+  padding-top: 10px;
+}
+
+.billpayment-sect .bp-btns .primary-button {
+  margin-bottom: 10px;
+  min-width: 145px;
+}
+
+.billpayment-sect .bp-logos {
+  text-align: right;
+  padding: 10px 0;
+}
+.billpayment-sect .bp-logos .digicert {
+  max-height: 40px;
+}
+
+.billpayment-sect .bp-logos img {
+  width: auto;
+  max-height: 20px;
+}
+
+/*Changes Oct24*/
+@media (max-width: 1230px) and (min-width: 516px) {
+  .billpayment-sect .sect-thumb img {
+    margin-left: -45%;
+  }
+}@media (max-width: 515px) {
+ .billpayment-sect .sect-thumb,
+  .billpayment-sect .sect-right {
+    float: none;
+    width: 100%;
+  }
+  .billpayment-sect .sect-thumb img {
+    width: 100%;
+  }
+}
+
+
+.reload-btn {
+  margin-top: 25px;
+}
+
+
+
+.prepaid-lte-sect .plans-sect .plans-hdr .plan-col {
+    width: 160px;
+    margin: 30px 13px 0;
+    display: inline-block;
+    vertical-align: top
+}
+.prepaid-lte-sect .plans-sect .plan-panel .panel-header {
+    padding: 0;
+    color: #fff
+}
+.prepaid-lte-sect .plans-sect .plan-panel .panel-header .header-img {
+    vertical-align: middle
+}
+.prepaid-lte-sect .plans-sect .plan-panel .panel-body {
+    padding: 10px;
+    background-color: #f5f5f5;
+    font-family: 'robotomedium', Arial, Helvetica, sans-serif
+}
+.prepaid-lte-sect .plans-sect .body-row {
+    padding: 3px;
+    margin-top: 15px
+}
+.prepaid-lte-sect .plans-sect .body-row.text-separator,
+.prepaid-lte-sect .plans-sect .body-row.text-separator+.body-row {
+    margin-top: 5px
+}
+.prepaid-lte-sect .plans-sect .body-row.text-separator {
+    font-size: 12px
+}
+.prepaid-lte-sect .plans-sect .body-row.small {
+    margin-top: 10px
+}
+.prepaid-lte-sect .plans-sect .body-row:first-child {
+    margin-top: 0
+}
+.prepaid-lte-sect .plans-sect .plan-quota {
+    font-family: 'robotobold', Arial, Helvetica, sans-serif;
+    font-size: 14px
+}
+.prepaid-lte-sect .plans-sect .plan-quota.grey {
+    font-size: 12px
+}
+.prepaid-lte-sect .plans-sect .plan-quota .quota-main {
+    font-size: 25px;
+    line-height: 1
+}
+.prepaid-lte-sect .plans-sect .plan-validity {
+    color: #9d9d9d;
+    font-size: 10px;
+    text-transform: uppercase
+}
+.prepaid-lte-sect .plans-sect .plan-validity .validity-main {
+    font-family: 'robotobold', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1
+}
+.prepaid-lte-sect .plans-sect .plan-validity.small .validity-main {
+    font-size: 18px
+}
+.prepaid-lte-sect .plans-sect .plan-price {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    color: #111;
+}
+.prepaid-lte-sect .plans-sect .plan-price .price-main {
+    font-family: 'robotobold', Arial, Helvetica, sans-serif;
+    font-size: 18px
+}
+.prepaid-lte-sect .plans-sect .plan-panel.magenta .panel-header {
+    background-color: #ec1067
+}
+.prepaid-lte-sect .plans-sect .plan-panel.magenta .plan-quota {
+    color: #ec1067
+}
+.prepaid-lte-sect .plans-sect .plan-panel.red .panel-header {
+    background-color: #f35906
+}
+.prepaid-lte-sect .plans-sect .plan-panel.red .plan-quota {
+    color: #f35906
+}
+.prepaid-lte-sect .plans-sect .plan-panel.orange .panel-header {
+    background-color: #fd8d15
+}
+.prepaid-lte-sect .plans-sect .plan-panel.orange .plan-quota {
+    color: #fd8d15
+}
+.prepaid-lte-sect .plans-sect .plan-panel.teal .panel-header {
+    background-color: #0490a4
+}
+.prepaid-lte-sect .plans-sect .plan-panel.teal .plan-quota {
+    color: #0490a4
+}
+.prepaid-lte-sect .plans-sect .plan-panel.turquoise .panel-header {
+    background-color: #13b1a4
+}
+.prepaid-lte-sect .plans-sect .plan-panel.turquoise .plan-quota {
+    color: #13b1a4
+}
+.prepaid-lte-sect .plans-sect .plan-panel.blue2 .panel-header {
+    background-color: #19a3d0
+}
+.prepaid-lte-sect .plans-sect .plan-panel.blue2 .plan-quota {
+    color: #19a3d0
+}
+.prepaid-lte-sect .plans-sect .plan-panel.darkblue .panel-header {
+    background-color: #047ca4
+}
+.prepaid-lte-sect .plans-sect .plan-panel.darkblue .plan-quota {
+    color: #047ca4
+}
+.prepaid-lte-sect .plans-sect .plan-panel.green .panel-header {
+    background-color: #64bb46
+}
+.prepaid-lte-sect .plans-sect .plan-panel.green .plan-quota {
+    color: #64bb46
+}
+.prepaid-lte-sect .plans-sect .plan-notes {
+    color: #fff;
+    font-family: 'robotolight', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: left
+}
+.prepaid-lte-sect .plans-sect .plan-notes b {
+    font-family: 'robotobold', Arial, Helvetica, sans-serif;
+    font-weight: normal
+}
+
+.account-content .details .bill-payment .enter-amount {
+       overflow: auto;
+}
+ /*Added Nov9*/
+.activate-or-convert {
+  padding: 15px 10px;
+}
+.activate-or-convert label {
+  margin-left: 15px;
+  font-family: "robotolight", Arial, Helvetica, sans-serif;
+}
+.activation-code,
+.activation-code-and-convert,
+.express-reload .express-reload-content .reload-cards .buttons-wrapper,
+.activation-code-and-convert .select-addons {
+  display: none;
+}
+.activation-code-and-convert .select-addons {
+  overflow: auto;
+}
+.validate-reloadcard-activation-code {
+  position: absolute;
+  top: 14px;
+  right: 30px;
+  z-index: 10; 
+}
+@media (max-width: 767px) {
+  .validate-reloadcard-activation-code  {
+    top: 49px;
+    right: 34px; 
+  }
+}
+/**/
+
+.highlight-text {
+    /*background-color: #ffff00;*/
+    font-weight: bold;
+    color: #0faef2;
+}
+
+/*Changes Jan13*/
+
+.international-roaming .current-subscription .roaming-plan {
+  padding-bottom: 15px;
+}
+
+.international-roaming .table-inputs th {
+    width: 35%;
+    padding-left: 25px;
+    font-family: "robotoregular", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    
+}
+.international-roaming .table-inputs td {
+    padding: 5px 25px 5px 15px;
+    height: 46px;
+}
+
+.table-inputs .required .control-label:before {
+    color: #ec1067;
+    content: "*";
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -4px;
+    z-index: 10; 
+ }
+
+.table-inputs select,
+.table-inputs input {
+    border: 1px solid #E1E4E6;
+    font-size: 1em;
+    padding: 10px 12px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 46px;   
+}
+.table-inputs .note {
+  padding: 0;
+}
+.table-inputs .datepicker-wrapper {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .table-inputs .note {
+    padding: 0 !important;
+  }
+}
+/* Counter CSS 27/03/17 */
+.request-timeout-wrapper .inline { padding: 0; border-bottom: 1px solid #E1E4E6; }
+.intro-line { padding: 10px 0 0 14px; }
+.icon_alert { background-image: url('../images/icon_alert.png'); width: 24px; height: 24px; background-size: 24px; display: inline-block; float: left; margin: -2px 12px 0 0;}
+.inline { display: inline !important; }
+.caution span:nth-child(1) { text-transform: uppercase; text-decoration: underline; font-weight: bolder; }
+.redText, .caution span:nth-child(2) { color: #EC1067;}
+.request-timeout-wrapper { padding: 0 70px; }
+.request-timeout { background: rgba(236, 16, 103, 0.1); display: block; padding: 30px; margin: 20px auto; }
+.additional-info { padding: 0 30px; }
+#clock-wrapper { text-align: center; padding: 30px 0 0; }
+#clockdiv{ font-family: sans-serif; color: #fff; display: inline-block; font-weight: lighter; text-align: center; font-size: 42px; }
+#clockdiv > div { border-radius: 3px; background: rgba(236, 16, 91,0.4); display: inline-block; }
+#clockdiv div > span { padding: 24px; border-radius: 3px; background: #EC1067; display: inline-block; }
+.smalltext { font-size: 12px; } /* Counter CSS 27/03/17 */
+
+  span.bm_model{
+  margin-bottom:20px;
+  text-align:center;
+  display:block;
+  font-size:75%;
+  line-height:1.3em;
+  opacity:0.8;
+}
+
+
+
+.account-content .account-overview .account-subscription-details  .input-group.terms label span.bm {
+
+    margin-top: 0 !important;
+    background-color: transparent !important;
+    height: auto !important;}
+	
+	.account-content .account-overview .account-subscription-details table th span.bm {
+	    display: block !important;
+    position: initial !important;
+    background-color: transparent !important;
+    color: #000 !important;
+    text-transform: initial !important;
+    padding-left: 0;}
+    
+    
+/* BLUESTORM CHANGES */
+
+span.bm {
+  display: block;
+  font-size: 75%;
+  opacity: 0.8;
+  line-height: 1.3em;
+}
+
+input[type="checkbox"]+label span.bm,
+input[type="radio"]+label span.bm {
+ 
+    border: 0 none;
+    display: block;
+    margin-top: -3px;
+    padding-left: 32px;
+    width: 120%;
+}
+
+
+input[type="checkbox"]:checked+label span.bm,
+input[type="radio"]:checked+label span.bm {
+  background: transparent !important;
+  border: 0;
+}
+
+.free-unlimited .small {
+  font-size: 10px;
+  line-height: 1em;
+}
+
+.big-title {
+  text-align: center;
+  font-family: 'Changa One', sans-serif;
+  text-transform: uppercase;
+  color: #444;
+  font-size: 38px;
+  line-height: 0.9em;
+}
+
+.big-title .bm {
+  padding-top: 5px;
+  font-size: 65%;
+  line-height: 1em;
+}
+
+h5.big-title {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.plan-col .plan-panel .panel-header {
+  padding: 10px !important;
+}
+
+.comparison-table .heading th {
+  font-family: 'Changa One', sans-serif;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+.table-cell.free-unlimited {
+  vertical-align: middle;
+}
+
+.table-cell.free-unlimited h2 {
+  margin: 0;
+}
+
+.free200mb {
+  background-color: #5dbd3e;
+  border-radius: 9px;
+  padding: 20px !important;
+  max-width: 320px;
+  margin: -40px auto 0;
+}
+
+
+/* Slider */
+
+.overviewBanner .slider {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4px;
+  width: 100%;
+  cursor: default;
+}
+
+.overviewBanner .slider ul {
+  width: 1000%;
+  height: auto;
+  position: relative;
+  list-style: none;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  -moz-animation: slide-animation 15s infinite;
+  -webkit-animation: slide-animation 15s infinite;
+}
+
+.overviewBanner .slider ul:hover {
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+.overviewBanner .slider li {
+  width: 10%;
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  cursor: default !important;
+}
+
+.overviewBanner img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.overviewBanner span {
+  position: relative;
+  height: 50px;
+  display: block;
+  font-size: 0.8em;
+  bottom: 0;
+  padding: 0.5px 20px 0px 20px;
+  margin-top: -50px;
+  overflow: hidden;
+  background-color: rgba(54, 44, 48, 0.6);
+  color: #fcfcfc;
+  text-shadow: 0px 1px 1px #9d9d9d;
+  font-weight: normal;
+  border-radius: 4px;
+}
+
+@-webkit-keyframes slide-animation {
+  1% {
+    left: 0%;
+    opacity: 1;
+  }
+  48% {
+    left: 0%;
+    opacity: 1
+  }
+  49% {
+    opacity: 0.2;
+  }
+  50% {
+    left: -100%;
+    opacity: 1;
+  }
+  97% {
+    left: -100%;
+    opacity: 1;
+  }
+  98% {
+    left: -100%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.5;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@-moz-keyframes slide-animation {
+  1% {
+    left: 0%;
+    opacity: 1;
+  }
+  48% {
+    left: 0%;
+    opacity: 1
+  }
+  49% {
+    opacity: 0.2;
+  }
+  50% {
+    left: -100%;
+    opacity: 1;
+  }
+  97% {
+    left: -100%;
+    opacity: 1;
+  }
+  98% {
+    left: -100%;
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.5;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.table-cell.eight-gb,
+.table-cell.break-down {
+  vertical-align: middle;
+}
+
+.custom-label{
+  text-align: left!important ;
+}
+
+
+/*******/
+    

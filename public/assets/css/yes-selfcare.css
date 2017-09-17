@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('font.css');
+
+
+.spacer0 {clear:both; height:0px;}
+
+.wrapper{width:1024px; margin:0px auto; position:relative;}
+
+.ctnt-hdr{position:relative}
+
+.icon-hdr{background-position:center; background-repeat:no-repeat; background-size:contain;}
+
+
+.left-panel{float:left;}
+.right-panel{float:right;}
+
+
+/*---icons---*/
+
+.secure-icon{background-position:center; background-repeat:no-repeat; background-size:contain;}
+	.secure-icon.mc-secure{background-image:url(../images/logos/logo-mc-secure.png);}
+	.secure-icon.visa-verify{background-image:url(../images/logos/logo-visa-verify.png);}
+	.secure-icon.digicert-secure{background-image:url(../images/logos/logo-digicert-secure.png);}
+
+
+.header_wrapper{margin-left:-15px;margin-right:-15px;}
+
+@media only screen and (max-width:1024px) {
+	
+	.wrapper{width:100%;}
+		
+}
+
+/**/
+/* Counter CSS 27/03/17 */
+.request-timeout-wrapper .inline { padding: 0; border-bottom: 1px solid #E1E4E6; }
+.intro-line { padding: 10px 0 0 14px; }
+.icon_alert { background-image: url('../images/icon_alert.png'); width: 24px; height: 24px; background-size: 24px; display: inline-block; float: left; margin: -2px 12px 0 0;}
+.inline { display: inline !important; }
+.caution span:nth-child(1) { text-transform: uppercase; text-decoration: underline; font-weight: bolder; }
+.redText, .caution span:nth-child(2) { color: #EC1067;}
+.request-timeout-wrapper { padding: 0 70px; }
+.request-timeout { background: rgba(236, 16, 103, 0.1); display: block; padding: 30px; margin: 20px auto; }
+.additional-info { padding: 0 30px; }
+#clock-wrapper { text-align: center; padding: 30px 0 0; }
+#clockdiv{ font-family: sans-serif; color: #fff; display: inline-block; font-weight: lighter; text-align: center; font-size: 42px; }
+#clockdiv > div { border-radius: 3px; background: rgba(236, 16, 91,0.4); display: inline-block; }
+#clockdiv div > span { padding: 24px; border-radius: 3px; background: #EC1067; display: inline-block; }
+.smalltext { font-size: 12px; } /* Counter CSS 27/03/17 */
+
+/**/ 

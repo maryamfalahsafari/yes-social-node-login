@@ -1,0 +1,33 @@
+<div class="page-header" style="margin-top:150px;"> <h1>User Registration</h1></div>
+
+<form ng-submit="regUser();">
+    <!-- Email -->
+    <label>Email :</label>
+    <input class="form-control" type="text" name="email" placeholder="Please enter your email" ng-model="regData.email" required/>
+    <br>
+    <!--Username-->
+    <label>YesId :</label>
+    <input class="form-control" type="text" name="username" placeholder="Please enter your username" ng-model="regData.username" required/>
+    <br>
+    <!--Password-->
+    <label>Password :</label>
+    <input class="form-control" type="password" name="password" placeholder="Please enter your password" ng-model="regData.password" required/>
+    <br>
+    <!--FacebookId-->
+    <label>FacebookId :</label>
+    <input class="form-control" type="text" name="facebookId" placeholder="Please enter your facebookId" ng-model="regData.facebookId"/>
+    <br>
+    <!--GoogleId-->
+    <label>GoogleId :</label>
+    <input class="form-control" type="text" name="googleId" placeholder="Please enter your googleId" ng-model="regData.googleId"/>
+    <br>
+    <!--TwitterId-->
+    <label>TwitterId :</label>
+    <input class="form-control" type="text" name="twitterId" placeholder="Please enter your twitterId" ng-model="regData.twitterId"/>
+    <br>
+    <button class="btn btn-primary" type="submit">Register</button>
+    <br>
+    <br>
+    <br>
+    <br>
+</form>
