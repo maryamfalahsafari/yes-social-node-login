@@ -6,9 +6,11 @@ var userSchema = new mongoose.Schema({
     username:{type:String,lowercase:true,required:true,unique:true},
     password:{type:String,required:true},
     email:{type:String,required:true,lowercase:true,unique:true},
-    facebookId:{type:String,lowercase:true,unique:true},
-    googleId:{type:String,lowercase:true,unique:true},
-    twitterId:{type:String,lowercase:true,unique:true}
+
+
+    facebookId:{type:String,lowercase:true,unique:true, sparse: true},
+    googleId:{type:String,lowercase:true,unique:true, sparse: true},
+    twitterId:{type:String,lowercase:true,unique:true, sparse: true}
 });
 
 userSchema.pre('save', function(next) {
