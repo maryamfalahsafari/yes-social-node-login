@@ -12,10 +12,13 @@ app.factory('authService',function($http,$window){
         authFactory.decodeToken = function(token){
 
             return $http.post('/api/decode_token',{ token : token });
-        }
+        };
         authFactory.getYesIdBySocialId = function(socialType,id){
             return $http.post('/api/getYesIdBySocialId',{ socialType : socialType , id : id });
-        }
+        };
+        authFactory.logout = function(token){
+            return $http.post('/api/logout',{token:token});
+        };
         return authFactory;
     
 });

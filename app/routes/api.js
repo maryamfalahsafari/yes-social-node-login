@@ -1,5 +1,5 @@
 var user = require('../models/user');
-// var client = require('../models/client');
+var request = require('request');
 var jwt = require('jsonwebtoken');
 var secret = 'harrypotter';
 
@@ -130,7 +130,23 @@ module.exports = function(app,router,passport){
 
         res.json({number : temp.substring(2,13) + '@yes.my' , origin : temp});
 
-    })
+    });
+    router.post('/logout',function(req,res){
+
+        var token = req.body.token;
+        console.log('token',token);
+        request.delete({
+            url:'https://graph.facebook.com/me/permissions', 
+            form: {access_token:token}
+        }, 
+        function(err,httpResponse,body){ 
+            res.json(JSON.parse(body));
+         });
+
+    });
+
+
+
 
 
     

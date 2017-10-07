@@ -1,7 +1,7 @@
 app.controller('socialController',function($scope,authService,userService,$routeParams,$location,$window){
     //if ($location.hash() == '_=_') $location.hash(null);
     //$window.location = $window.location.href.replace('#','');
-   // console.log( $routeParams.token);
+   //console.log( $routeParams.token);
     
     var init = function(){
 
@@ -48,12 +48,25 @@ app.controller('socialController',function($scope,authService,userService,$route
 
 
     $scope.logout = function(){
-       $location.path('/login');
-
+        $location.path('/login');
+        // if ($scope.info.provider=="google"){
+        //     $window.location = "https://accounts.google.com/Logout";
+        // }else if ($scope.info.provider=="twitter"){
+        //     $window.location = "https://twitter.com/logout";
+        // }else if ($scope.info.provider=="facebook"){
+        //     authService.logout($routeParams.token).then(function(data){
+        //         alert(data);
+        //     });
+        // }else{
+        //     $location.path('/login');
+        // }
     }
     $scope.regUser = function(){
         userService.createUser($scope.regData).then(function(data){
             alert(data.data.message);
+            if (data.data.success == true){
+                $window.location.reload();
+            }
         });
     }
     

@@ -15,7 +15,7 @@ var app = angular.module('yesApp',['ngRoute'])
             controller:'socialController'
         })
         
-        .otherwise({redirectTo:'/login'});
+       // .otherwise({redirectTo:'/login'});
 
         $locationProvider.html5Mode({//maryam:important
             enabled: true,
